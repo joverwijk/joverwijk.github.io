@@ -12,13 +12,13 @@
 /* Standaardlettertype en achtergrondkleur */
 body {
     font-family: "Source Sans Pro", sans-serif;
-    /*background-color: #164225; */
+    background-color: #164225;
 }
 
 /* Eigenschappen van de hoofdinhoud */
 main {
-    background: linear-gradient(to right, transparent, #FAFAFA 5%, #FAFAFA 95%, transparent);
-    width: 85%;
+    background-color: #FAFAFA;
+    width: 80%;
     padding: 7.5% 10%;
     height: 100vh;
     max-width: 75%;
