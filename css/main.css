@@ -1,0 +1,64 @@
+/*****************************************************************************/
+/* Imports en andere @-regels (exclusief responsieve).                       */
+/*****************************************************************************/
+
+/* Importeer verschillende lettertypen via Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Coda|Source+Sans+Pro');
+
+/*****************************************************************************/
+/* 'Grote' elementen als BODY, HTML e.d.                                     */
+/*****************************************************************************/
+
+/* Standaardlettertype en achtergrondkleur */
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    /*background-color: #164225; */
+}
+
+/* Eigenschappen van de hoofdinhoud */
+main {
+    background: linear-gradient(to right, transparent, #FAFAFA 5%, #FAFAFA 95%, transparent);
+    width: 85%;
+    padding: 7.5% 10%;
+    height: 100vh;
+    max-width: 75%;
+    margin: auto;
+}
+
+/*****************************************************************************/
+/* DIV's en andere 'kleine' elementen.                                       */
+/*****************************************************************************/
+
+/* H-elementen. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Coda", serif;
+}
+
+h1 {
+    font-size: 175%;
+}
+
+h2 {
+    font-size: 150%;
+}
+
+h3 {
+    font-size: 130%;
+}
+
+h4 {
+    font-size: 120%;
+}
+
+h5 {
+    font-size: 115%;
+}
+
+h6 {
+    font-size: 110%;
+}
