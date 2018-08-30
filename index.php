@@ -40,7 +40,6 @@
     // vervang $active_dashboard door 'class="active"'
     // vervang '<!-- FILEEXT -->' door php
     $pagetitle_procd = str_replace('<!-- PAGETITLE -->', $page_title, $page_content);
-    $active_procd = str_replace($active_dashboard, ' class="active" ', $pagetitle_procd);
     $proc_page_content = str_replace('<!-- FILEEXT -->', 'php', $pagetitle_procd);
     
     // voeg hier meer te processeren spul toe.
@@ -49,7 +48,7 @@
     echo $proc_page_content;
 
     // extra spul voor GitHub
-    $github_page_content = str_replace('<!-- FILEEXT -->', 'html', $active_procd);
+    $github_page_content = str_replace('<!-- FILEEXT -->', 'html', $pagetitle_procd);
     // sla inhoud op als HTML voor GitHub
     file_put_contents('index.html', $github_page_content);
 ?>
