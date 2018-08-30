@@ -23,7 +23,7 @@
                 <?php include('needs/graph.php'); ?>
                 <h3>Toetsen</h3>
                 <p>
-                    TODO. Soon^tm!
+                    TODO. Soon^tm! <!-- In ieder geval Computer Science Basics & Programming Basics, Casus en Groepswerk -->
                 </p>
                 <h2>Studiewijzer</h2>
                 <p>
