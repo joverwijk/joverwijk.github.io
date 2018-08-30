@@ -12,6 +12,7 @@
 /* Standaardlettertype en achtergrondkleur */
 body {
     font-family: "Source Sans Pro", sans-serif;
+    color: #111;
     background-color: #164225;
 }
 
@@ -27,19 +28,47 @@ main {
     -webkit-box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.5);
 }
 
+/* Gedeelte met 'eigenlijke' inhoud */
 section {
     padding: 7.5% 2%;
 }
 
+/* Navigatiebalk */
 nav {
     top: 0;
     left: 0;
     height: 4em;
     width: 100%;
+    margin: 0;
+    padding: 0;
     position: absolute;
+    overflow: hidden;
     background-color: #FAFAFA;
     box-shadow: 0px 16px 15px -5px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: 0px 16px 15px -5px rgba(0, 0, 0, 0.5);
+}
+
+nav > a {
+    text-align: center;
+    padding: 1.4em;
+    color: #111;
+    text-decoration: none;
+    float: left;
+}
+
+nav > a:hover {
+    background-color: #69A27C;
+    color: #111 !important;
+    text-decoration: none;
+}
+
+nav > a.active {
+    background-color: #297B45;
+    color: #FFF;
+}
+
+nav > a.right {
+    float: right;
 }
 
 /*****************************************************************************/
@@ -81,26 +110,6 @@ h6 {
 }
 
 /* A-elementen (links e.d.) */
-@keyframes link_color {
-    from {
-        color:#164225;
-    }
-    to {
-        color: #23683A;
-        box-shadow: 0px 0px 20px 0px rgba(48,142,79,0.5);
-    }
-}
-
-@-webkit-keyframes link_color {
-    from {
-        color: #164225;
-    }
-    to {
-        color: #23683A;
-        -webkit-box-shadow: 0px 0px 20px 0px rgba(48,142,79,0.5);
-    }
-}
-
 a {
     color: #164225;
 }
@@ -108,8 +117,6 @@ a {
 a:hover {
     text-decoration: underline;
     color: #23683A;
-    animation-name: link_color;
-    animation-duration: 1s;
-    -webkit-animation-name: link_color;
-    -webkit-animation-duration: 1s;
+    box-shadow: 0px 0px 20px 0px rgba(48,142,79,0.5);
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(48,142,79,0.5);
 }
