@@ -19,7 +19,6 @@ body {
 main {
     background-color: #FAFAFA;
     width: 80%;
-    padding: 7.5% 10%;
     height: 100vh;
     max-width: 75%;
     margin: auto;
@@ -61,4 +60,38 @@ h5 {
 
 h6 {
     font-size: 110%;
+}
+
+/* A-elementen (links e.d.) */
+@keyframes link_color {
+    from {
+        color:#164225;
+    }
+    to {
+        color: #23683A;
+        box-shadow: 0px 0px 20px 0px rgba(48,142,79,0.5);
+    }
+}
+
+@-webkit-keyframes link_color {
+    from {
+        color: #164225;
+    }
+    to {
+        color: #23683A;
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(48,142,79,0.5);
+    }
+}
+
+a {
+    color: #164225;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #23683A;
+    animation-name: link_color;
+    animation-duration: 1s;
+    -webkit-animation-name: link_color;
+    -webkit-animation-duration: 1s;
 }
