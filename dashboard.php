@@ -21,7 +21,9 @@
                 </p>
                 <h2>Studiemonitor</h2>
                 <?php include('needs/graph.php'); ?>
+                <h3>Toetsen</h3>
                 <p>
+                    TODO. Soon^tm!
                 </p>
                 <h2>Studiewijzer</h2>
                 <p>
