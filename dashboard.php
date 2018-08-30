@@ -6,7 +6,6 @@
             include('needs/header.php');
             $page_title = 'Dashboard';
         ?>
-        
     </head>
     <body>
         <?php
@@ -18,7 +17,7 @@
                 <h1>Dashboard</h1>
                 <p>
                     Deze pagina bevat mijn persoonlijke dashboard. Het bevat onder
-                    andere een voortgangsmeter en handige links.
+                    andere een studiemonitor en handige links.
                 </p>
                 <h2>Studiemonitor</h2>
                 <?php include('needs/graph.php'); ?>
