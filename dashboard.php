@@ -25,7 +25,15 @@
                 </p>
                 <h2>Studiewijzer</h2>
                 <p>
-                    <!-- link! -->
+                    Snel naar een belangrijke pagina? Gebruik de links hieronder!
+                    <ul>
+                        <li><a href="https://hz.nl/over-de-hz/regelingen-documenten-1/onderwijs-en-examenregelingen" title="Onderwijs- en examenregelingen">Onderwijs- en examenregelingen</a></li>
+                        <li><a href="https://hz.nl/over-de-hz/regelingen-documenten-1/onderwijs-en-examenregelingen" title="Studentenstatuut">Studentenstatuut</a></li>
+                        <li><a href="https://learn.hz.nl" title="Digitale leeromgeving">Digitale leeromgeving</a></li>
+                        <li><a href="https://hz-hbo-ict.slack.com/" title="Opleidingsslack">Opleidingsslack</a></li>
+                        <li><a href="https://learn.hz.nl/my/?myoverviewtab=timeline" title="Voortgang op MyHZ">Voortgang op MyHZ</a></li>
+                        <li><a href="https://github.com/hz-hbo-ict" title="Opleiding op GitHub">Opleiding op GitHub</a></li>
+                    </ul>
                 </p>
             </section>
         </main>

@@ -113,6 +113,7 @@ h6 {
 /* A-elementen (links e.d.) */
 a {
     color: #164225;
+    text-decoration: none;
 }
 
 a:hover {
