@@ -14,19 +14,19 @@
         ?>
         <main>
             <section>
-            <h1>Dashboard</h1>
-            <p>
-                Deze pagina bevat mijn persoonlijke dashboard. Het bevat onder
-                andere een voortgangsmeter en handige links.
-            </p>
-            <h2>Studiemonitor</h2>
-            <p>
-                <!-- Grafiek o.i.d. -->
-            </p>
-            <h2>Studiewijzer</h2>
-            <p>
-                <!-- link! -->
-            </p>
+                <h1>Dashboard</h1>
+                <p>
+                    Deze pagina bevat mijn persoonlijke dashboard. Het bevat onder
+                    andere een voortgangsmeter en handige links.
+                </p>
+                <h2>Studiemonitor</h2>
+                <p>
+                    <!-- Grafiek o.i.d. -->
+                </p>
+                <h2>Studiewijzer</h2>
+                <p>
+                    <!-- link! -->
+                </p>
             </section>
         </main>
     </body>
