@@ -1,28 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Dashboard</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-<script src="js/main.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>        
-    </head>
-    <body>
-        <nav><a href='index.html'>Home</a>
-<a href='profile.html'>Profile</a>
-<a class="active"  href='dashboard.html'>Dashboard</a>
-</nav>
-        <main>
-            <section>
-                <h1>Dashboard</h1>
-                <p>
-                    Deze pagina bevat mijn persoonlijke dashboard. Het bevat onder
-                    andere een voortgangsmeter en handige links.
-                </p>
-                <h2>Studiemonitor</h2>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
 <canvas id="ECGraph" height="250" width="800"></canvas>
 <p style="font-size: 0.7em; text-align:right">
     Grafiek gemaakt met behulp van <a href="http://www.chartjs.org/" title="Chart.js">Chart.js</a>.</br>
@@ -83,13 +59,4 @@
             }
         }
     });
-</script>                <p>
-                </p>
-                <h2>Studiewijzer</h2>
-                <p>
-                    <!-- link! -->
-                </p>
-            </section>
-        </main>
-    </body>
-</html>
+</script>

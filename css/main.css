@@ -62,9 +62,10 @@ nav > a:hover {
     text-decoration: none;
 }
 
+nav > a.active,
 nav > a.active {
     background-color: #297B45;
-    color: #FFF;
+    color: #FFF !important;
 }
 
 nav > a.right {
@@ -75,7 +76,7 @@ nav > a.right {
 /* DIV's en andere 'kleine' elementen.                                       */
 /*****************************************************************************/
 
-/* H-elementen. */
+/* H-elementen (titels). */
 h1,
 h2,
 h3,
@@ -117,6 +118,4 @@ a {
 a:hover {
     text-decoration: underline;
     color: #23683A;
-    box-shadow: 0px 0px 20px 0px rgba(48,142,79,0.5);
-    -webkit-box-shadow: 0px 0px 20px 0px rgba(48,142,79,0.5);
 }

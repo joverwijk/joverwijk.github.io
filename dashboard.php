@@ -6,6 +6,7 @@
             include('needs/header.php');
             $page_title = 'Dashboard';
         ?>
+        
     </head>
     <body>
         <?php
@@ -20,8 +21,8 @@
                     andere een voortgangsmeter en handige links.
                 </p>
                 <h2>Studiemonitor</h2>
+                <?php include('needs/graph.php'); ?>
                 <p>
-                    <!-- Grafiek o.i.d. -->
                 </p>
                 <h2>Studiewijzer</h2>
                 <p>
