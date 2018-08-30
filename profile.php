@@ -50,7 +50,8 @@
     echo $proc_page_content;
 
     // extra spul voor GitHub
-    $github_page_content = str_replace('<!-- FILEEXT -->', 'html', $active_procd);
+    $github_page_content = 
+    str_replace('<!-- FILEEXT -->', 'html', $active_procd);
     // sla inhoud op als HTML voor GitHub
     file_put_contents('profile.html', $github_page_content);
 ?>
