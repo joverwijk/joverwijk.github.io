@@ -5,6 +5,32 @@
     Punten zijn gegeven per maand.
 </p>
 <script>
+    /* Plug-ins */
+    Chart.plugins.register({
+    // need to manipulate tooltip visibility before its drawn (but after update)
+    beforeDraw: function(chartInstance, easing) {
+        // check and see if the plugin is active (its active if the option exists)
+        if (chartInstance.config.options.tooltips.onlyShowForDatasetIndex) {
+        // get the plugin configuration
+        var tooltipsToDisplay = chartInstance.config.options.tooltips.onlyShowForDatasetIndex;
+
+        // get the active tooltip (if there is one)
+        var active = chartInstance.tooltip._active || [];
+
+        // only manipulate the tooltip if its just about to be drawn
+        if (active.length > 0) {
+            // first check if the tooltip relates to a dataset index we don't want to show
+            if (tooltipsToDisplay.indexOf(active[0]._datasetIndex) === -1) {
+            // we don't want to show this tooltip so set it's opacity back to 0
+            // which causes the tooltip draw method to do nothing
+            chartInstance.tooltip._model.opacity = 0;
+            }
+        }
+        }
+    }
+    });
+
+    /* Grafiekdata */
     var ctx = document.getElementById("ECGraph");
     var ECGraph = new Chart(ctx, {
         type: 'line',
@@ -18,25 +44,20 @@
             ],
             datasets: [{
                 label: "EC",
-                /* Nieuwe data:
-                    {
-                        x: datum,
-                        y: punten
-                    },
-                */
-                data: [0],
+                data: [0], // iedere waarde representeert een maand zoals beschreven bij 'labels' hierboven
                 fill: false,
                 lineTension: 0,
                 spanGaps: true,
                 borderColor: "#164225",
                 backgroundColor: "#A1B3A7"
             }, {
-                label: "NBSA-grens propedeuse",
-                data: [45,,,,,,,,,,,45],
+                label: "NBSA-grens propedeuse (45 EC)",
+                data: [45,,,,,,,,,,,45], // aug 2018 - jul 2019
                 fill: false,
                 spanGaps: true,
                 borderColor: "red",
-                backgroundColor: "#FF9999"
+                backgroundColor: "#FF9999",
+                pointHitRadius: 0
             }]
         },
         options: {
@@ -44,6 +65,16 @@
                 display: true,
                 text: 'EC verkregen over tijd',
                 padding: 10
+            },
+            tooltips: {
+                enabled: true,
+                mode: 'single',
+                onlyShowForDatasetIndex: [0],
+                callbacks: {
+                    label: function(tooltipItems, data) {
+                        return data.datasets[tooltipItems.datasetIndex].label + ': ' + tooltipItems.yLabel;
+                    }
+                }
             },
             scales: {
                 yAxes: [{

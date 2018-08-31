@@ -87,19 +87,19 @@ h6 {
 }
 
 h1 {
-    font-size: 185%;
+    font-size: 205%;
 }
 
 h2 {
-    font-size: 150%;
+    font-size: 175%;
 }
 
 h3 {
-    font-size: 130%;
+    font-size: 150%;
 }
 
 h4 {
-    font-size: 120%;
+    font-size: 130%;
 }
 
 h5 {
@@ -107,7 +107,7 @@ h5 {
 }
 
 h6 {
-    font-size: 110%;
+    font-size: 105%;
 }
 
 /* A-elementen (links e.d.) */
@@ -119,4 +119,27 @@ a {
 a:hover {
     text-decoration: underline;
     color: #23683A;
+}
+
+/* Tabel met EC en toetsen */
+.ec_table {
+    width: 90%;
+    margin: auto;
+}
+
+.ec_table > tbody > tr.failed {
+    background-color: #FF9999;
+}
+
+.ec_table > tbody > tr.passed {
+    background-color: #99FF99;
+}
+
+.ec_table > tbody > tr > td {
+    text-align: center;
+}
+
+/* Zorg voor een gelijke breedte van de eerste kolom */
+.equal_width_fcol {
+    width: 25%;
 }

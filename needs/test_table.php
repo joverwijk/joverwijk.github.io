@@ -20,11 +20,11 @@
 
     }
 
-    $table_start = '<table><thead><tr><th>Toets</th><th>Resultaat</th><th>EC-waarde</th><th>EC virtueel</th><th>EC vastgesteld</th></tr></thead><tbody>';
+    $table_start = '<table class="ec_table"><thead><tr><th class="equal_width_fcol">Toets</th><th>Resultaat</th><th>EC-waarde</th><th>EC virtueel</th><th>EC vastgesteld</th></tr></thead><tbody>';
     $table_end = '</tbody></table>';
     
     // echo add_test('naam', 'resultaat', 'EC-waarde', 'EC virtueel', 'EC bepaald', 'behaald');
-    echo '<h4>2018-2019</h4><h5>Blok 1 (15,00 EC)</h5>';
+    echo '<h4>2018-2019 (60,00 EC)</h4><h5>Blok 1 (15,00 EC)</h5>';
     echo $table_start;
     echo add_test('Opleidings- en beroepsoriëntatie', null, '2,50', '0', null, null);
     echo add_test('Computer science basics', null, '7,50', '0', null, null);
