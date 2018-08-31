@@ -22,9 +22,7 @@
                 <h2>Studiemonitor</h2>
                 <?php include('needs/graph.php'); ?>
                 <h3>Toetsen</h3>
-                <p>
-                    TODO. Soon^tm! <!-- In ieder geval Computer Science Basics & Programming Basics, Casus en Groepswerk -->
-                </p>
+                <?php include('needs/test_table.php'); ?>
                 <h2>Studiewijzer</h2>
                 <p>
                     Snel naar een belangrijke pagina? Gebruik de links hieronder!
@@ -32,6 +30,7 @@
                         <li><a href="https://hz.nl/over-de-hz/regelingen-documenten-1/onderwijs-en-examenregelingen" title="Onderwijs- en examenregelingen">Onderwijs- en examenregelingen</a></li>
                         <li><a href="https://hz.nl/over-de-hz/regelingen-documenten-1/onderwijs-en-examenregelingen" title="Studentenstatuut">Studentenstatuut</a></li>
                         <li><a href="https://learn.hz.nl" title="Digitale leeromgeving">Digitale leeromgeving</a></li>
+                        <li><a href="https://apps.hz.nl/angular/studievoortgang/studiestatus" title="Studiestatus">Studiestatus</a></li>
                         <li><a href="https://hz-hbo-ict.slack.com/" title="Opleidingsslack">Opleidingsslack</a></li>
                         <li><a href="https://learn.hz.nl/my/?myoverviewtab=timeline" title="Voortgang op MyHZ">Voortgang op MyHZ</a></li>
                         <li><a href="https://github.com/hz-hbo-ict" title="Opleiding op GitHub">Opleiding op GitHub</a></li>
@@ -45,7 +44,7 @@
     /* 
         Voor iedere wijziging moet er een nieuwe variabele toegevoegd worden in
         het gedeelte voor te processeren spul. Hoewel dit een beetje onhandig
-        werkt, weet ik op dit moment geen betere oplossing voor dit probleem.
+        werkt, weet ik op dit moment geen betere oplossing voor dit.
 
         Aangeraden wordt om in ieder geval $proc_page_content te houden als laatste
         variabele, zodat er geen problemen ontstaan bij het opslaan van de HTML-
@@ -53,11 +52,10 @@
         variabele.
     */
     
-    // sla inhoud op in $page_content' en wis buffer
+    // sla inhoud op in $page_content en wis buffer
     $page_content = ob_get_clean();
 
     // vervang '<!-- PAGETITLE -->' door $page_title
-    // vervang $active_dashboard door 'class="active"'
     // vervang '<!-- FILEEXT -->' door php
     $pagetitle_procd = str_replace('<!-- PAGETITLE -->', $page_title, $page_content);
     $proc_page_content = str_replace('<!-- FILEEXT -->', 'php', $pagetitle_procd);

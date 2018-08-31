@@ -23,7 +23,7 @@
     /* 
         Voor iedere wijziging moet er een nieuwe variabele toegevoegd worden in
         het gedeelte voor te processeren spul. Hoewel dit een beetje onhandig
-        werkt, weet ik op dit moment geen betere oplossing voor dit probleem.
+        werkt, weet ik op dit moment geen betere oplossing voor dit.
 
         Aangeraden wordt om in ieder geval $proc_page_content te houden als laatste
         variabele, zodat er geen problemen ontstaan bij het opslaan van de HTML-
@@ -31,11 +31,10 @@
         variabele.
     */
     
-    // sla inhoud op in $page_content' en wis buffer
+    // sla inhoud op in $page_content en wis buffer
     $page_content = ob_get_clean();
 
     // vervang '<!-- PAGETITLE -->' door $page_title
-    // vervang $active_dashboard door 'class="active"'
     // vervang '<!-- FILEEXT -->' door php
     $pagetitle_procd = str_replace('<!-- PAGETITLE -->', $page_title, $page_content);
     $proc_page_content = str_replace('<!-- FILEEXT -->', 'php', $pagetitle_procd);
