@@ -3,8 +3,8 @@
 <html>
     <head>
         <?php
-            include('needs/header.php');
             $page_title = 'Home';
+            include('needs/header.php');
         ?>
     </head>
     <body>
@@ -17,11 +17,13 @@
                 <h1>Soon^tm</h1>
                 <p>Binnenkort... \o/. Ja echt, heeeeel binnenkort. Hopefully...</p>
                 <!-- TODO: Links & meer -->
+                <?php include('needs/footer.php'); ?>
             </section>
         </main>
     </body>
 </html>
 <?php
+
     /* 
         Voor iedere wijziging moet er een nieuwe variabele toegevoegd worden in
         het gedeelte voor te processeren spul. Hoewel dit een beetje onhandig
@@ -38,8 +40,7 @@
 
     // vervang '<!-- PAGETITLE -->' door $page_title
     // vervang '<!-- FILEEXT -->' door php
-    $pagetitle_procd = str_replace('<!-- PAGETITLE -->', $page_title, $page_content);
-    $proc_page_content = str_replace('<!-- FILEEXT -->', 'php', $pagetitle_procd);
+    $proc_page_content = str_replace('<!-- FILEEXT -->', 'php', $page_content);
     
     // voeg hier meer te processeren spul toe.
     
@@ -47,7 +48,7 @@
     echo $proc_page_content;
 
     // extra spul voor GitHub
-    $github_page_content = str_replace('<!-- FILEEXT -->', 'html', $pagetitle_procd);
+    $github_page_content = str_replace('<!-- FILEEXT -->', 'html', $page_content);
     // sla inhoud op als HTML voor GitHub
     file_put_contents('index.html', $github_page_content);
 ?>

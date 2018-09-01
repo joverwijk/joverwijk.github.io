@@ -1,6 +1,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
 <canvas id="ECGraph" height="250" width="800"></canvas>
-<p style="font-size: 0.7em; text-align:right">
+<p class="small_right">
     Grafiek gemaakt met behulp van <a href="http://www.chartjs.org/" title="Chart.js">Chart.js</a>.</br>
     Punten zijn gegeven per maand.
 </p>

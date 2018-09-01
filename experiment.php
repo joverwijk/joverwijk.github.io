@@ -3,8 +3,8 @@
 <html>
     <head>
         <?php
-            include('needs/header.php');
             $page_title = 'MOAR EXPERIMENTS';
+            include('needs/header.php');
         ?>
     </head>
     <body>
@@ -15,6 +15,7 @@
         <main>
             <section>
                 <p>Hallo wereld!</p>
+                <?php include('needs/footer.php'); ?>
             </section>
         </main>
     </body>
@@ -34,10 +35,8 @@
     // sla inhoud op in $page_content en wis buffer
     $page_content = ob_get_clean();
 
-    // vervang '<!-- PAGETITLE -->' door $page_title
     // vervang '<!-- FILEEXT -->' door php
-    $pagetitle_procd = str_replace('<!-- PAGETITLE -->', $page_title, $page_content);
-    $proc_page_content = str_replace('<!-- FILEEXT -->', 'php', $pagetitle_procd);
+    $proc_page_content = str_replace('<!-- FILEEXT -->', 'php', $page_content);
     
     // voeg hier meer te processeren spul toe.
     
@@ -45,7 +44,7 @@
     echo $proc_page_content;
 
     // extra spul voor GitHub
-    $github_page_content = str_replace('<!-- FILEEXT -->', 'html', $pagetitle_procd);
+    $github_page_content = str_replace('<!-- FILEEXT -->', 'html', $page_content);
     // sla inhoud op als HTML voor GitHub
     file_put_contents('experiment.html', $github_page_content);
 ?>

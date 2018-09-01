@@ -3,11 +3,15 @@
     <head>
         <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Dashboard</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>
+    Dashboard</title>
+
 <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-<script src="js/main.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>    </head>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>    </head>
     <body>
         <nav><a href='index.html'>Home</a>
 <a href='profile.html'>Profiel</a>
@@ -22,9 +26,12 @@
                     andere een studiemonitor en handige links.
                 </p>
                 <h2>Studiemonitor</h2>
+                <p>
+                    Bron: <a href="https://apps.hz.nl/angular/studievoortgang/studievoortgang" title="Studievoortgang">Studievoortgang</a>
+                </p>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
 <canvas id="ECGraph" height="250" width="800"></canvas>
-<p style="font-size: 0.7em; text-align:right">
+<p class="small_right">
     Grafiek gemaakt met behulp van <a href="http://www.chartjs.org/" title="Chart.js">Chart.js</a>.</br>
     Punten zijn gegeven per maand.
 </p>
@@ -128,7 +135,10 @@
                         <li><a href="https://github.com/hz-hbo-ict" title="Opleiding op GitHub">Opleiding op GitHub</a></li>
                     </ul>
                 </p>
-            </section>
+                <p class="small_right copy">
+    ©2018</br>
+    <a href="sitemap.php" title="Sitemap">sitemap</a>
+</p>            </section>
         </main>
     </body>
 </html>

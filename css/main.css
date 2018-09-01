@@ -143,3 +143,14 @@ a:hover {
 .equal_width_fcol {
     width: 25%;
 }
+
+/* Kleine tekst */
+.small_right {
+    font-size: 0.7em;
+    text-align: right;
+}
+
+/* Toon copyright etc. aan de onderkant van pagina */
+.copy {
+    margin-bottom: -6em;
+}

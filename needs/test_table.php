@@ -1,9 +1,16 @@
 <?php
     function add_test($test_name, $result, $ec_value, $ec_virtual, $ec_determined, $passed) {
+        // standaardwaarde voor resultaat
         if ($result == null) {
             $result = '---';
         }
+        
+        // standaardwaarde voor bepaalde EC
+        if ($ec_determined == null) {
+            $ec_determined = '---';
+        }
 
+        // bepaal, a.d.h.v. waarde $passed, de achtergrondkleur van deze tabelrij
         if ($passed == 'no') {
             $bg = ' class="failed"';
         } elseif ($passed == 'yes') {
@@ -12,10 +19,7 @@
             $bg = '';
         }
 
-        if ($ec_determined == null) {
-            $ec_determined = '---';
-        }
-
+        // geef als antwoord een volledige tabelrij
         return '<tr' . $bg . '><td>' . $test_name . '</td><td>' . $result . '</td><td>' . $ec_value . '</td><td>' . $ec_virtual . '</td><td>' . $ec_determined . '</td></tr>';
 
     }
