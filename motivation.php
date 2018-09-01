@@ -14,7 +14,7 @@
         ?>
         <main>
             <section>
-            
+                <p>SOON!</p>
                 <?php include('needs/footer.php'); ?>
             </section>
         </main>
