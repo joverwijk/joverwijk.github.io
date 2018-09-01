@@ -38,7 +38,6 @@
     // sla inhoud op in $page_content' en wis buffer
     $page_content = ob_get_clean();
 
-    // vervang '<!-- PAGETITLE -->' door $page_title
     // vervang '<!-- FILEEXT -->' door php
     $proc_page_content = str_replace('<!-- FILEEXT -->', 'php', $page_content);
     
