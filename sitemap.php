@@ -18,6 +18,7 @@
     echo generate_entry('profile');
     echo generate_entry('dashboard');
     echo generate_entry('experiment');
+    echo generate_entry('motivation');
     echo '</urlset>';
 
     // sla inhoud op in $page_content en wis buffer

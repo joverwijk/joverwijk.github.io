@@ -9,7 +9,7 @@
     </head>
     <body>
         <?php
-            $active_dashboard = ' class="active" ';
+            $nav_link_active = 'dashboard';
             include('needs/nav.php');
         ?>
         <main>

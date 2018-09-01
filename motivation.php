@@ -3,18 +3,18 @@
 <html>
     <head>
         <?php
-            $page_title = 'MOAR EXPERIMENTS';
+            $page_title = 'Motivatie';
             include('needs/header.php');
         ?>
     </head>
     <body>
         <?php
-            $nav_link_active = 'experiment';
+            $nav_link_active = 'motivation';
             include('needs/nav.php');
         ?>
         <main>
             <section>
-                <p>Hallo wereld!</p>
+            
                 <?php include('needs/footer.php'); ?>
             </section>
         </main>
@@ -28,5 +28,5 @@
     include('needs/postprocessing.php');
 
     // sla inhoud na postprocessing op in HTML
-    file_put_contents('experiment.html', $github_page_content);
+    file_put_contents('motivation.html', $github_page_content);
 ?>

@@ -9,7 +9,7 @@
     </head>
     <body>
         <?php
-            $active_profile = ' class="active" ';
+            $nav_link_active = 'profile';
             include('needs/nav.php');
         ?>
         <main>
