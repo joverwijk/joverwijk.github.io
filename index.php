@@ -23,7 +23,6 @@
     </body>
 </html>
 <?php
-
     /* 
         Voor iedere wijziging moet er een nieuwe variabele toegevoegd worden in
         het gedeelte voor te processeren spul. Hoewel dit een beetje onhandig

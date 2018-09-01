@@ -20,11 +20,11 @@
                     andere een studiemonitor en handige links.
                 </p>
                 <h2>Studiemonitor</h2>
+                <?php include('needs/graph.php'); ?>
+                <h3>Toetsen</h3>
                 <p>
                     Bron: <a href="https://apps.hz.nl/angular/studievoortgang/studievoortgang" title="Studievoortgang">Studievoortgang</a>
                 </p>
-                <?php include('needs/graph.php'); ?>
-                <h3>Toetsen</h3>
                 <?php include('needs/test_table.php'); ?>
                 <h2>Studiewijzer</h2>
                 <p>
@@ -36,7 +36,11 @@
                         <li><a href="https://apps.hz.nl/angular/studievoortgang/studiestatus" title="Studiestatus">Studiestatus</a></li>
                         <li><a href="https://hz-hbo-ict.slack.com/" title="Opleidingsslack">Opleidingsslack</a></li>
                         <li><a href="https://learn.hz.nl/my/?myoverviewtab=timeline" title="Voortgang op MyHZ">Voortgang op MyHZ</a></li>
-                        <li><a href="https://github.com/hz-hbo-ict" title="Opleiding op GitHub">Opleiding op GitHub</a></li>
+                        <li>GitHub</li>
+                        <ul>
+                            <li><a href="https://github.com/hz-hbo-ict" title="Opleiding op GitHub">Opleiding op GitHub</a></li>
+                            <li><a href="https://github.com/joverwijk" title="Persoonlijke GitHub">Persoonlijke GitHub</a></li>
+                        </ul>
                     </ul>
                 </p>
                 <?php include('needs/footer.php'); ?>
@@ -45,7 +49,6 @@
     </body>
 </html>
 <?php
-
     /* 
         Voor iedere wijziging moet er een nieuwe variabele toegevoegd worden in
         het gedeelte voor te processeren spul. Hoewel dit een beetje onhandig

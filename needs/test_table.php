@@ -1,27 +1,26 @@
 <?php
     function add_test($test_name, $result, $ec_value, $ec_virtual, $ec_determined, $passed) {
-        // standaardwaarde voor resultaat
+        // standaardwaarde voor kolom resultaat
         if ($result == null) {
             $result = '---';
         }
         
-        // standaardwaarde voor bepaalde EC
+        // standaardwaarde voor kolom bepaalde EC
         if ($ec_determined == null) {
             $ec_determined = '---';
         }
 
-        // bepaal, a.d.h.v. waarde $passed, de achtergrondkleur van deze tabelrij
+        // bepaal, a.d.h.v. variabele $passed, de achtergrondkleur ($bg) van deze tabelrij
         if ($passed == 'no') {
-            $bg = ' class="failed"';
+            $bg = ' class="failed"'; // lichtrood
         } elseif ($passed == 'yes') {
-            $bg = ' class="passed"';
+            $bg = ' class="passed"'; // lichtgroen
         } else {
-            $bg = '';
+            $bg = ''; // niets
         }
 
         // geef als antwoord een volledige tabelrij
         return '<tr' . $bg . '><td>' . $test_name . '</td><td>' . $result . '</td><td>' . $ec_value . '</td><td>' . $ec_virtual . '</td><td>' . $ec_determined . '</td></tr>';
-
     }
 
     $table_start = '<table class="ec_table"><thead><tr><th class="equal_width_fcol">Toets</th><th>Resultaat</th><th>EC-waarde</th><th>EC virtueel</th><th>EC vastgesteld</th></tr></thead><tbody>';
@@ -61,6 +60,4 @@
     echo add_test('HZ-Personality 2a', null, '2,50', '0', null, null);
     echo add_test('IT Personality 2a', null, '2,50', '0', null, null);
     echo $table_end;
-
-    // TODO: Stijl
 ?>

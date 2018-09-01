@@ -6,6 +6,8 @@
 </p>
 <script>
     /* Plug-ins */
+
+    /* Toon labels van bepaalde lijnen niet */
     Chart.plugins.register({
     // need to manipulate tooltip visibility before its drawn (but after update)
     beforeDraw: function(chartInstance, easing) {
@@ -66,6 +68,7 @@
                 text: 'EC verkregen over tijd',
                 padding: 10
             },
+            // Toon alleen label van lijn 0 (oftewel de EC-lijn)
             tooltips: {
                 enabled: true,
                 mode: 'single',

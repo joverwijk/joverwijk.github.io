@@ -13,4 +13,6 @@
     
     // plaats nav
     echo '<nav>' . $nav_link_home . $nav_link_profile . $nav_link_dashboard . $nav_link_exper . "</nav>\n";
+
+    // TODO: zet om tot een functie i.p.v. allemaal handmatig te bepalen.
 ?>
