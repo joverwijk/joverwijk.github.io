@@ -20,10 +20,10 @@
         }
 
         // geef als antwoord een volledige tabelrij
-        return '<tr' . $bg . '><td>' . $test_name . '</td><td>' . $result . '</td><td>' . $ec_value . '</td><td>' . $ec_virtual . '</td><td>' . $ec_determined . '</td></tr>';
+        return '<tr' . $bg . '><td>' . $test_name . '</td><td>' . $result . '</td><td>' . $ec_value . '</td><td>' . $ec_virtual . '</td><td>' . $ec_determined . "</td></tr>\n";
     }
 
-    $table_start = '<table class="ec_table"><thead><tr><th class="equal_width_fcol">Toets</th><th>Resultaat</th><th>EC-waarde</th><th>EC virtueel</th><th>EC vastgesteld</th></tr></thead><tbody>';
+    $table_start = '<table class="ec_table"><thead><tr><th class="equal_width_fcol">Toets</th><th>Resultaat</th><th>EC-waarde</th><th>EC virtueel</th><th>EC vastgesteld</th></tr></thead><tbody>' . "\n";
     $table_end = '</tbody></table>';
     
     // echo add_test('naam', 'resultaat', 'EC-waarde', 'EC virtueel', 'EC bepaald', 'behaald');
