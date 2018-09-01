@@ -7,7 +7,7 @@
 
     // links
     $nav_link_home = "<a" . $active_home . " href='index.<!-- FILEEXT -->'>Home</a>\n";
-    $nav_link_profile = "<a" . $active_profile . " href='profile.<!-- FILEEXT -->'>Profiel</a>\n";
+    $nav_link_profile = "<a" . $active_profile . " href='profile.<!-- FILEEXT -->'>Over mij</a>\n";
     $nav_link_dashboard = "<a" . $active_dashboard . " href='dashboard.<!-- FILEEXT -->'>Dashboard</a>\n";
     $nav_link_exper = "<a" . $active_exper . " href='experiment.<!-- FILEEXT -->'>Experimenten</a>\n";
     

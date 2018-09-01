@@ -141,7 +141,7 @@ a:hover {
 
 /* Zorg voor een gelijke breedte van de eerste kolom */
 .equal_width_fcol {
-    width: 25%;
+    width: 30%;
 }
 
 /* Kleine tekst */
@@ -153,4 +153,29 @@ a:hover {
 /* Toon copyright etc. aan de onderkant van pagina */
 .copy {
     margin-bottom: -6em;
+}
+
+/*****************************************************************************/
+/* Float-klassen                                                             */
+/*****************************************************************************/
+
+/* Plaats elementen met 'class="left_half"' links met breedte 50% */
+.left_half {
+    display: block;
+    float: left;
+    width: 45%;
+    margin: 0.5em;
+}
+
+/* Plaats elementen met 'class="right_half"' rechts met breedte 50% */
+.right_half {
+    display: block;
+    float: right;
+    width: 45%;
+    margin: 0.5em;
+}
+
+/* Zorg ervoor dat de pagina verder uitbreidt. */
+.clear {
+    clear: both;
 }
