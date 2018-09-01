@@ -9,9 +9,6 @@
         pagina. Houd voor GitHub de variable $github_page_content aan als laatste
         variabele.
     */
-    
-    // sla inhoud op in $page_content en wis buffer
-    $page_content = ob_get_clean();
 
     // vervang '<!-- FILEEXTXML -->' door php
     // vervang '<!-- FILEEXT -->' door php

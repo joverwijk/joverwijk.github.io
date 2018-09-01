@@ -40,6 +40,12 @@
     </body>
 </html>
 <?php
-    $page_name = 'profile';
+    // sla inhoud op in $page_content en wis buffer
+    $page_content = ob_get_clean();
+
+    // postprocessing
     include('needs/postprocessing.php');
+
+    // sla inhoud na postprocessing op in HTML
+    file_put_contents('profile.html', $github_page_content);
 ?>
