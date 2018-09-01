@@ -54,6 +54,7 @@
                         te blijven gaan na verschillende tegenslagen.
                     </p>
                 </div>
+                <!-- TODO: afbeeldingen, eventueel links -->
                 <?php include('needs/footer.php'); ?>
             </section>
         </main>

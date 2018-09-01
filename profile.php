@@ -33,7 +33,11 @@
                         <li>Presenteert daarom dus ook liever niet...</li>
                         <li>Stelt met regelmaat privacy boven 'je mag alles weten'.</li>
                     </ul>
-                </ol> <!-- TODO: uitbreiden met meer kenmerken en een afbeelding -->
+                    <li>Overige</li>
+                    <ul>
+                        Kan soms een <i>grammar nazi</i> zijn.
+                    </ul>
+                </ol> <!-- TODO: uitbreiden met meer 'kenmerken' en een afbeelding -->
                 <?php include('needs/footer.php'); ?>
             </section>
         </main>
