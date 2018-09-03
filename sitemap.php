@@ -8,8 +8,9 @@
     function generate_entry($page_name) {
         $last_modified = date('c', filemtime($page_name . '.php'));
         $url = 'http://foobar.dev/';
+        $full_url = $url . $page_name;
 
-        return "<url>\n<loc>" . $url . $page_name . ".php</loc>\n<lastmod>" . $last_modified . "</lastmod>\n</url>\n";
+        return "<url>\n<loc>" . $full_url . ".php</loc>\n<lastmod>" . $last_modified . "</lastmod>\n</url>\n";
     }
 
     echo '<?xml version="1.0" encoding="utf-8" ?>' . "\n";

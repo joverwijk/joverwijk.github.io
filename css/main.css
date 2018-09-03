@@ -145,6 +145,10 @@ a:hover {
 }
 
 /* Kleine tekst */
+.small_left {
+    font-size: 0.7em;
+}
+
 .small_right {
     font-size: 0.7em;
     text-align: right;
@@ -153,6 +157,21 @@ a:hover {
 /* Toon copyright etc. aan de onderkant van pagina */
 .copy {
     margin-bottom: -6em;
+}
+
+/* Afbeeldingen */
+img {
+    display: inline;
+}
+
+/* Generieke inline-klas */
+.inline {
+    display: inline;
+}
+
+/* Vetgedrukte geordende lijst */
+.list_bold > li {
+    font-weight: bold;
 }
 
 /*****************************************************************************/
@@ -173,6 +192,15 @@ a:hover {
     float: right;
     width: 45%;
     margin: 0.5em;
+}
+
+/* Generieke floats */
+.float_left {
+    float: left;
+}
+
+.float_right {
+    float: right;
 }
 
 /* Zorg ervoor dat de pagina verder uitbreidt. */
