@@ -23,11 +23,4 @@
     // extra spul voor GitHub
     $xml_github = str_replace('<!-- FILEEXTXML -->', 'xml', $page_content);
     $github_page_content = str_replace('<!-- FILEEXT -->', 'html', $xml_github);
-    
-    // sla inhoud op als HTML voor GitHub
-    function html_page($page_name) {
-        if (empty($page_name)) $page_name = 'missingno';
-
-        return file_put_contents($page_name . '.html', $github_page_content);
-    }
 ?>
