@@ -159,11 +159,6 @@ a:hover {
     margin-bottom: -6em;
 }
 
-/* Afbeeldingen */
-img {
-    display: inline;
-}
-
 /* Generieke inline-klas */
 .inline {
     display: inline;
@@ -201,6 +196,23 @@ img {
 
 .float_right {
     float: right;
+}
+
+/* Plaats element in het midden (soort van 'float') */
+.float_center {
+    margin: auto;
+    width: 100%;
+}
+
+/* Blijkbaar hebben afbeeldingen speciale stijl nodig */
+.center_image_wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.float_center_image {
+    display: inline-block;
+    margin: 0 auto;
 }
 
 /* Zorg ervoor dat de pagina verder uitbreidt. */
