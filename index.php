@@ -66,7 +66,7 @@
                     en wordt, als het goed is, 'regelmatig' bijgewerkt. Verder is
                     deze website geschreven in PHP, met stijl gedefinieerd in CSS,
                     wat JavaScript erbij en wordt de pagina omgezet naar HTML om
-                    te tonen in GitHub Pages, omdat deze applicatie PHP niet
+                    te tonen in GitHub Pages, omdat die applicatie PHP niet
                     ondersteunt.
                 </p>
                 <div class="center_image_wrapper">

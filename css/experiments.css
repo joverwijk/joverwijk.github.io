@@ -1,0 +1,119 @@
+/* Dit bestand dient als CSS voor experiment.php/.html */
+
+.superbox {
+    text-align: center;
+}
+
+/* Onderwerp 1 */
+.left_box_s1 {
+    color: #FFF;
+    width: 300px;
+    background-color: rgb(0, 162, 255);
+    border: 3px solid rgb(0, 81, 127);
+    padding: 16px 8px;
+    margin-right: 7px;
+    display: inline-block;
+    text-align: left;
+}
+
+.right_box_s1 {
+    color: #FFF;
+    width: 300px;
+    background-color: rgb(0, 162, 255);
+    border: 3px solid rgb(0, 0, 0);
+    padding: 16px 8px;
+    display: inline-block;
+    text-align: right;
+}
+
+/* Onderwerp 2 */
+.top_box_s2 {
+    color: #FFF;
+    width: 600px;
+    background-color: rgb(0,162,255);
+    padding: 16px 8px;
+    text-align: left;
+    display: inline-block;
+}
+
+.bottom_box_s2 {
+    color: #FFF;
+    width: 600px;
+    height: 250px;
+    background-color: rgb(239, 95, 167);
+    padding: 16px 8px;
+    text-align: left;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+/* Onderwerp 3 */
+.left_box_s3 {
+    color: #FFF;
+    width: 300px;
+    background-color: rgb(0, 162, 255);
+    border: 3px solid rgb(0, 81, 127);
+    padding: 16px 8px;
+    margin-right: 3px;
+    display: inline-block;
+    text-align: left;
+    transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+}
+
+.right_box_s3 {
+    color: #FFF;
+    width: 300px;
+    background-color: rgb(0, 162, 255);
+    border: 3px solid rgb(0, 0, 0);
+    padding: 16px 8px;
+    display: inline-block;
+    text-align: right;
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+}
+
+/* Onderwerp 4 */
+@keyframes rotate_lb {
+    100% {
+        transform: rotate(355deg);
+        -webkit-transform: rotate(355deg);
+    }
+}
+
+@keyframes rotate_rb {
+    100% {
+        transform: rotate(370deg);
+        -webkit-transform: rotate(370deg);
+    }
+}
+
+.left_box_s4 {
+    color: #FFF;
+    width: 300px;
+    background-color: rgb(0, 162, 255);
+    border: 3px solid rgb(0, 81, 127);
+    padding: 16px 8px;
+    margin-right: 3px;
+    display: inline-block;
+    text-align: left;
+    animation: rotate_lb 1s;
+    -webkit-animation: rotate_lb 1s;
+    transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+}
+
+.right_box_s4 {
+    color: #FFF;
+    width: 300px;
+    background-color: rgb(0, 162, 255);
+    border: 3px solid rgb(0, 0, 0);
+    padding: 16px 8px;
+    display: inline-block;
+    text-align: right;
+    animation: rotate_rb 1s;
+    -webkit-animation: rotate_rb 1s;
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+}
