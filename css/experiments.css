@@ -64,7 +64,7 @@
 /* Onderwerp 3 */
 .left_box_s3 {
     border: 3px solid rgb(0, 81, 127);
-    margin-right: 6px;
+    margin-right: 4px;
     text-align: left;
     transform: rotate(-5deg);
     -webkit-transform: rotate(-5deg);
@@ -80,9 +80,22 @@
 
 /* Onderwerp 4 */
 @keyframes rotate_lb {
+    0% {
+        background-color: #FF0000;
+    }
+    33% {
+        background-color: #00FF00;
+        transform: scale(2);
+        transform: rotate(165deg);
+    }
+    66% {
+        background-color: #0000FF;
+        transform: skew(10deg, 75deg);
+    }
     100% {
         transform: rotate(355deg);
         -webkit-transform: rotate(355deg);
+        background-color: #FF0000;
     }
 }
 
@@ -95,7 +108,7 @@
 
 .left_box_s4 {
     border: 3px solid rgb(0, 81, 127);
-    margin-right: 6px;
+    margin-right: 4px;
     text-align: left;
     animation: rotate_lb 1s;
     -webkit-animation: rotate_lb 1s;
