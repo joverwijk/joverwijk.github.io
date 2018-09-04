@@ -11,12 +11,12 @@
         }
 
         // bepaal, a.d.h.v. variabele $passed, de achtergrondkleur ($bg) van deze tabelrij
-        if ($passed == 'no') {
-            $bg = ' class="failed"'; // lichtrood
+        if ($passed == null) {
+            $bg = ''; // niets
         } elseif ($passed == 'yes') {
             $bg = ' class="passed"'; // lichtgroen
-        } else {
-            $bg = ''; // niets
+        } elseif ($passed == 'no') {
+            $bg = ' class="failed"'; // lichtrood
         }
 
         // geef als antwoord een volledige tabelrij
