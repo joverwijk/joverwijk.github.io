@@ -2,7 +2,8 @@
 
 /* Standaardgebeuren */
 .superbox {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .box > p {
@@ -15,7 +16,6 @@
     width: 300px;
     background-color: rgb(0, 162, 255);
     padding: 16px 8px;
-    display: inline-block;
 }
 
 /* Onderwerp 1 */
@@ -53,16 +53,18 @@
     vertical-align: center;
     overflow-x: hidden;
     color: #FFF;
+    padding: 16px 0 16px 8px;
+    height: 100vh;
 }
 
 .main_box_s2 > p {
-    margin-top: 50vh;
+    margin-top: 25%;
 }
 
 /* Onderwerp 3 */
 .left_box_s3 {
     border: 3px solid rgb(0, 81, 127);
-    margin-right: 3px;
+    margin-right: 6px;
     text-align: left;
     transform: rotate(-5deg);
     -webkit-transform: rotate(-5deg);
@@ -93,7 +95,7 @@
 
 .left_box_s4 {
     border: 3px solid rgb(0, 81, 127);
-    margin-right: 3px;
+    margin-right: 6px;
     text-align: left;
     animation: rotate_lb 1s;
     -webkit-animation: rotate_lb 1s;
