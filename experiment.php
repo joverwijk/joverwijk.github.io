@@ -21,38 +21,33 @@
                 </p>
                 <h5>Onderwerp 1: Box-model</h5>
                 <div class="superbox">
-                    <div class="left_box_s1">
-                        Linkerbox
+                    <div class="box left_box_s1">
+                        <p>Linkerbox</p>
                     </div>
-                    <div class="right_box_s1">
-                        Rechterbox
+                    <div class="box right_box_s1">
+                        <p>Rechterbox</p>
                     </div>
                 </div>
                 <h5>Onderwerp 2: Lay-out</h5>
-                <div class="superbox">
-                    <div class="top_box_s2">
-                        Dit is mijn hoofd
-                    </div>
-                    <div class="bottom_box_s2">
-                        Content
-                    </div>
-                </div>
+                <p>
+                    Zie <a href="experiment2.html">deze pagina</a>.
+                </p>
                 <h5>Onderwerp 3: CSS transformations</h5>
                 <div class="superbox">
-                    <div class="left_box_s3">
-                        Linkerbox
+                    <div class="box left_box_s3">
+                        <p>Linkerbox</p>
                     </div>
-                    <div class="right_box_s3">
-                        Rechterbox
+                    <div class="box right_box_s3">
+                        <p>Rechterbox</p>
                     </div>
                 </div>
                 <h5>Onderwerp 4: CSS animations</h5>
                 <div class="superbox">
-                    <div class="left_box_s4">
-                        Linkerbox
+                    <div class="box left_box_s4">
+                        <p>Linkerbox</p>
                     </div>
-                    <div class="right_box_s4">
-                        Rechterbox
+                    <div class="box right_box_s4">
+                        <p>Rechterbox</p>
                     </div>
                 </div>
                 <?php include('needs/footer.php'); ?>
