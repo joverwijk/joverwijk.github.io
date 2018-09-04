@@ -83,17 +83,23 @@
     0% {
         background-color: #FF0000;
     }
+    10% {
+        transform: scale(0.1);
+    }
     33% {
         background-color: #00FF00;
-        transform: scale(2);
-        transform: rotate(165deg);
+        transform: rotate(165deg) skew(90deg, 305deg);
     }
     66% {
         background-color: #0000FF;
         transform: skew(10deg, 85deg);
     }
-    95% {
+    80% {
         background-color: #FF0000;
+        transform: scale(3) matrix(1, 3, 6, 4, 10, 5);
+    }
+    90% {
+        transform: scale(0.01);
     }
     100% {
         transform: rotate(355deg);
@@ -117,6 +123,7 @@
     -webkit-animation: rotate_lb 2s;
     transform: rotate(-5deg);
     -webkit-transform: rotate(-5deg);
+    z-index: 2;
 }
 
 .right_box_s4 {
