@@ -2,11 +2,11 @@
 
 .superbox {
     text-align: center;
+    color: #FFF;
 }
 
 /* Onderwerp 1 */
 .left_box_s1 {
-    color: #FFF;
     width: 300px;
     background-color: rgb(0, 162, 255);
     border: 3px solid rgb(0, 81, 127);
@@ -17,7 +17,6 @@
 }
 
 .right_box_s1 {
-    color: #FFF;
     width: 300px;
     background-color: rgb(0, 162, 255);
     border: 3px solid rgb(0, 0, 0);
@@ -28,7 +27,6 @@
 
 /* Onderwerp 2 */
 .top_box_s2 {
-    color: #FFF;
     width: 600px;
     background-color: rgb(0,162,255);
     padding: 16px 8px;
@@ -39,7 +37,6 @@
 }
 
 .bottom_box_s2 {
-    color: #FFF;
     width: 600px;
     height: 250px;
     background-color: rgb(239, 95, 167);
@@ -52,7 +49,6 @@
 
 /* Onderwerp 3 */
 .left_box_s3 {
-    color: #FFF;
     width: 300px;
     background-color: rgb(0, 162, 255);
     border: 3px solid rgb(0, 81, 127);
@@ -65,7 +61,6 @@
 }
 
 .right_box_s3 {
-    color: #FFF;
     width: 300px;
     background-color: rgb(0, 162, 255);
     border: 3px solid rgb(0, 0, 0);
@@ -92,7 +87,6 @@
 }
 
 .left_box_s4 {
-    color: #FFF;
     width: 300px;
     background-color: rgb(0, 162, 255);
     border: 3px solid rgb(0, 81, 127);
@@ -107,7 +101,6 @@
 }
 
 .right_box_s4 {
-    color: #FFF;
     width: 300px;
     background-color: rgb(0, 162, 255);
     border: 3px solid rgb(0, 0, 0);
