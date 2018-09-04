@@ -50,7 +50,7 @@ nav {
 
 nav > a {
     text-align: center;
-    padding: 1.4em;
+    padding: 1.5em;
     color: #111;
     text-decoration: none;
     float: left;
@@ -173,7 +173,7 @@ a:hover {
 /* Float-klassen                                                             */
 /*****************************************************************************/
 
-/* Plaats elementen met 'class="left_half"' links met breedte 50% */
+/* Plaats elementen met 'class="left_half"' links met breedte 45% */
 .left_half {
     display: block;
     float: left;
@@ -181,7 +181,7 @@ a:hover {
     margin: 0.5em;
 }
 
-/* Plaats elementen met 'class="right_half"' rechts met breedte 50% */
+/* Plaats elementen met 'class="right_half"' rechts met breedte 45% */
 .right_half {
     display: block;
     float: right;
