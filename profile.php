@@ -16,7 +16,7 @@
             <section>
                 <h1>Over mij</h1>
                 <p class="float_right small_right inline">
-                    <img src="img/me.jpg" width="125px" alt="Een afbeelding van mij"></br>
+                    <img src="/img/me.jpg" width="125px" alt="Een afbeelding van mij"></br>
                     Een afbeelding van mij.
                 </p>
                 <p>

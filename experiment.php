@@ -6,7 +6,7 @@
             $page_title = 'Experimenten';
             include('needs/header.php');
         ?>
-        <link rel="stylesheet" type="text/css" media="screen" href="css/experiments.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="/css/experiments.css" />
     </head>
     <body>
         <?php
@@ -30,7 +30,7 @@
                 </div>
                 <h5>Onderwerp 2: Lay-out</h5>
                 <p>
-                    Zie <a href="experiment2.html">deze pagina</a>. Hier is ook
+                    Zie <a href="/experiment2.html">deze pagina</a>. Hier is ook
                     een zijbalk aan toegevoegd.
                 </p>
                 <h5>Onderwerp 3: CSS transformations</h5>
