@@ -3,7 +3,7 @@
 Deze Git is bedoeld als thuisrepo van mijn portfolio van de opleiding. Hier
 verzamel ik, _als het goed is_, alle resultaten tot één.
 
-## Over de bestandsnamen
+## Over de bestanden
 Als een `PHP`-pagina op mijn localhost wordt geladen, wordt deze pagina automatisch
 omzet tot `HTML`-bestand (of tot `XML` in het geval van de sitemap). Bij eventuele
 wijzigingen worden deze `HTML`-bestanden bijgewerkt.
