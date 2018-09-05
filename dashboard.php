@@ -32,7 +32,7 @@
                     <ul>
                         <li><a href="https://hz.nl/uploads/documents/Regelingen/NL/Onderwijs-examenregelingen/OER-HZ-2018-2019docv2018-06-26DEFCvB-V-01.pdf" title="Onderwijs- en examenregelingen">Onderwijs- en examenregelingen</a></li>
                         <li><a href="https://hz.nl/uploads/documents/Regelingen/NL/Onderwijs-examenregelingen/Studentenstatuut/Studentenstatuut-HZ-University-of-Applied-Sciences.pdf" title="Studentenstatuut">Studentenstatuut</a></li>
-                        <li><a href="https://learn.hz.nl" title="Digitale leeromgeving">Digitale leeromgeving</a></li>
+                        <li><a href="https://learn.hz.nl/course/view.php?id=1024#section-0" title="Digitale leeromgeving blok 1">Digitale leeromgeving blok 1</a></li>
                         <li><a href="https://apps.hz.nl/angular/studievoortgang/studiestatus" title="Studiestatus">Studiestatus</a></li>
                         <li><a href="https://hz-hbo-ict.slack.com/" title="Opleidingsslack">Opleidingsslack</a></li>
                         <li><a href="https://learn.hz.nl/my/?myoverviewtab=timeline" title="Voortgang op MyHZ">Voortgang op MyHZ</a></li>

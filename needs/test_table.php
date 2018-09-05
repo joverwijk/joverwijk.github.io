@@ -36,8 +36,8 @@
 
     echo '<h5>Blok 2 (12,50 EC)</h5>';
     echo $table_start;
-    echo add_test('Object-oriented programming', null, '10,00', '0', null, null);
     echo add_test('Professional skills 1', null, '2,50', '0', null, null);
+    echo add_test('Object-oriented programming', null, '10,00', '0', null, null);
     echo $table_end;
 
     echo '<h5>Blok 3 (15,00 EC)</h5>';
@@ -51,8 +51,8 @@
     echo '<h5>Blok 4 (12,50 EC)</h5>';
     echo $table_start;
     echo add_test('Professional skills 3', null, '2,50', '0', null, null);
-    echo add_test('Framework project 2', null, '5,00', '0', null, null);
     echo add_test('Framework development 2', null, '5,00', '0', null, null);
+    echo add_test('Framework project 2', null, '5,00', '0', null, null);
     echo $table_end;
 
     echo '<h5>Overige (5,00 EC)</h5>';
