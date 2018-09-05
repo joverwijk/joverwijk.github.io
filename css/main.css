@@ -228,3 +228,23 @@ a:hover {
 .clear {
     clear: both;
 }
+
+/*****************************************************************************/
+/* Flex-klassen                                                              */
+/*****************************************************************************/
+
+/* Algemene flex-klasse */
+.flex {
+    display: flex;
+}
+
+/* Home */
+.flex_home {
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.flex_home > .flex_home_content {
+    flex-grow: 1;
+    padding: 5px;
+}
