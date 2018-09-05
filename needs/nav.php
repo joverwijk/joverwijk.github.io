@@ -1,5 +1,5 @@
 <?php
-    // standaardwaarden variabelen
+    // standaardwaarde variabelen
     $active_home = '';
     $active_profile = '';
     $active_dashboard = '';
@@ -25,9 +25,12 @@
     $nav_link_dashboard = "<a" . $active_dashboard . " href='dashboard.<!-- FILEEXT -->'>Dashboard</a>\n";
     $nav_link_experiment = "<a" . $active_experiment . " href='experiment.<!-- FILEEXT -->'>Experimenten</a>\n";
     $nav_link_motivation = "<a" . $active_motivation . " href='motivation.<!-- FILEEXT -->'>Motivatie</a>\n";
+
+    // responsief
+    $nav_responsive = '<a href="javascript:void(0);" class="nav_icon" onclick="show_nav_dropdown()"><i class="fa fa-bars"></i></a>';
     
-    // plaats nav
-    echo '<nav>' . $nav_link_home . $nav_link_profile . $nav_link_dashboard . $nav_link_motivation . $nav_link_experiment . "</nav>\n";
+    // plaats nav (nav_js is nodig voor JavaScript)
+    echo '<nav class="nav_js" id="responsive_nav">' . $nav_link_home . $nav_link_profile . $nav_link_dashboard . $nav_link_motivation . $nav_link_experiment . $nav_responsive . "</nav>\n";
 
     // TODO: zet om tot een functie i.p.v. allemaal handmatig te bepalen.
 ?>

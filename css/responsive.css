@@ -1,0 +1,38 @@
+/*
+    Hierin gaan alle regels die te maken hebben met responsiefheid. Bijbehorende
+    JavaScript is 'responsive.js'.
+*/
+
+/* Navigatiebalk (update 720px naargelang er meer links worden toegevoegd) */
+@media screen and (max-width: 720px) {
+    /* Toon alleen de Home-knop */
+    nav > a:not(:first-child) {
+        display: none;
+    }
+
+    /* Toon icoontje */
+    .nav_icon {
+        float: right;
+        position: sticky;
+        right: 0;
+        top: 0;
+    }
+
+    .nav_js > a.nav_icon {
+        display: block;
+    }
+
+    /* nav_responsive-klas en bijbehorende stijl voor andere klassen */
+    .nav_responsive {
+        position: sticky;
+        overflow: visible;
+    }
+
+    .nav_responsive > a {
+        float: none;
+        display: block !important;
+        text-align: left;
+        background-color: #FFF;
+        z-index: 9999;
+    }
+}
