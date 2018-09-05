@@ -92,11 +92,3 @@
     // sla inhoud na postprocessing op in HTML
     file_put_contents('index.html', $github_page_content);
 ?>
-
-<!--
-    TODO:
-    * Responsief maken
-        * In het bijzonder geschikt maken voor mobile
-    * Flexboxen
-    * MOAR EASTEREGGS
--->
