@@ -3,14 +3,25 @@
     JavaScript is 'responsive.js'.
 */
 
-/* Verbreed de witte achtergrond bij maximale grootte van 425 px */
+/*
+    Verbreed de witte achtergrond bij maximale grootte van 425 px
+    
+    Zorgt er ook voor dat de EC-tabel een scrollbalk gaat tonen.
+*/
 @media screen and (max-width: 425px) {
     main {
         width: 95%;
     }
+
+    .scrollable_ec_table {
+        overflow-x: scroll;
+    }
 }
 
-/* Toon de introductie op de home-pagina onder elkaar op schermen <651px (vreemde waarde, maar blijkbaar werkt het niet anders) */
+/* 
+    Toon de introductie op de home-pagina onder elkaar op schermen <651px (vreemde
+    waarde, maar blijkbaar werkt het niet anders)
+*/
 @media screen and (max-width: 651px) {
     .flex_home {
         flex-wrap: wrap;
@@ -22,7 +33,11 @@
     }
 }
 
-/* Navigatiebalk (update 720px naargelang er meer links worden toegevoegd) */
+/* 
+    Navigatiebalk (update 720px naargelang er meer links worden toegevoegd)
+    
+    JavaScript hiervoor is te vinden in 'js/responsive.js'.
+*/
 @media screen and (max-width: 720px) {
     /* Toon alleen de Home-knop */
     nav > a:not(:first-child) {
@@ -53,5 +68,12 @@
         text-align: left;
         background-color: #FFF;
         z-index: 9999;
+    }
+}
+
+/* Verberg de EC-grafiek wanneer het scherm <=800px */
+@media screen and (max-width: 800px) {
+    .chartjs-render-monitor, .responsive_graph_explanation {
+        display: none !important;
     }
 }

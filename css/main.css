@@ -16,6 +16,7 @@ body {
     font-family: "Source Sans Pro", sans-serif;
     color: #111;
     background-color: #164225;
+    overflow-x: hidden;
 }
 
 /* Eigenschappen van de hoofdinhoud */
@@ -32,7 +33,7 @@ main {
 
 /* Gedeelte met 'eigenlijke' inhoud */
 section {
-    padding: 2% 2% 7.5% 2%;
+    padding: 2% 2% 10px 2%;
 }
 
 /* Navigatiebalk */
@@ -133,7 +134,6 @@ a:hover {
 .ec_table {
     width: 90%;
     margin: auto;
-    overflow: scroll;
 }
 
 .ec_table > tbody > tr.failed {
@@ -163,16 +163,6 @@ a:hover {
     text-align: right;
 }
 
-/* Toon copyright etc. aan de onderkant van pagina */
-.copy {
-    margin-bottom: -6em;
-}
-
-/* Generieke inline-klas */
-.inline {
-    display: inline;
-}
-
 /* Vetgedrukte geordende lijst */
 .list_bold > li {
     font-weight: bold;
@@ -181,22 +171,6 @@ a:hover {
 /*****************************************************************************/
 /* Float-klassen                                                             */
 /*****************************************************************************/
-
-/* Plaats elementen met 'class="left_half"' links met breedte 45% */
-.left_half {
-    display: block;
-    float: left;
-    width: 45%;
-    margin: 0.5em;
-}
-
-/* Plaats elementen met 'class="right_half"' rechts met breedte 45% */
-.right_half {
-    display: block;
-    float: right;
-    width: 45%;
-    margin: 0.5em;
-}
 
 /* Generieke floats */
 .float_left {
@@ -239,6 +213,7 @@ a:hover {
 }
 
 /* Home */
+/* Inhoud */
 .flex_home {
     flex-wrap: nowrap;
     justify-content: center;
@@ -247,4 +222,10 @@ a:hover {
 .flex_home > .flex_home_content {
     flex-grow: 1;
     padding: 5px;
+}
+
+/* Programmeertaalafbeeldingen */
+.flex_prog_icons {
+    flex-wrap: nowrap;
+    justify-content: center;
 }

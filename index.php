@@ -71,11 +71,11 @@
                     te tonen in GitHub Pages, omdat die applicatie PHP niet
                     ondersteunt.
                 </p>
-                <div class="center_image_wrapper">
-                    <img class="float_center_image" src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" height="50px" title="PHP-logo" alt="PHP-logo">
-                    <img class="float_center_image" src="https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS.3.svg" height="50px" title="CSS3-logo" alt="CSS3-logo">
-                    <img class="float_center_image" src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Badge_js-strict.svg" height="50px" title="JavaScript-logo" alt="JavaScript-logo">
-                    <img class="float_center_image" src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" height="50px" title="HTML5-logo" alt="HTML5-logo">
+                <div class="flex flex_prog_icons">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" height="50px" title="PHP-logo" alt="PHP-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS.3.svg" height="50px" title="CSS3-logo" alt="CSS3-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Badge_js-strict.svg" height="50px" title="JavaScript-logo" alt="JavaScript-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" height="50px" title="HTML5-logo" alt="HTML5-logo">
                 </div>
                 <?php include('needs/footer.php'); ?>
             </section>

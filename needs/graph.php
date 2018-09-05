@@ -1,6 +1,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
-<canvas id="ECGraph" height="250" width="800"></canvas>
-<p class="small_right">
+<canvas id="ec_graph" height="250" width="800"></canvas>
+<p class="responsive_graph_explanation small_right">
     Grafiek gemaakt met behulp van <a href="http://www.chartjs.org/" title="Chart.js">Chart.js</a>.</br>
     Punten zijn gegeven per maand.
 </p>
@@ -33,8 +33,8 @@
     });
 
     /* Grafiekdata */
-    var ctx = document.getElementById("ECGraph");
-    var ECGraph = new Chart(ctx, {
+    var ctx = document.getElementById("ec_graph");
+    var ec_graph = new Chart(ctx, {
         type: 'line',
         data: {
             labels: [
