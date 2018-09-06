@@ -135,6 +135,11 @@ p {
     line-height: 1.3em;
 }
 
+/* Lijsten */
+ul {
+    list-style-type: disc;
+}
+
 /* Tabel met EC en toetsen */
 .ec_table {
     width: 90%;

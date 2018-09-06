@@ -22,8 +22,7 @@
                 <p>
                     Voordat je verder gaat lezen, ik ben Jarno Overwijk. Lees wat
                     meer over mij op <a href="profile.<!-- FILEEXT -->" title="Profiel">deze
-                    pagina</a>. Dit zou, als het goed is, de onderstaande tekst
-                    beter te begrijpen maken.
+                    pagina</a>.
                 </p>
                 <article class="flex flex_home">
                     <div class="flex_home_content">
