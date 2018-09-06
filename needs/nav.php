@@ -30,7 +30,5 @@
     $nav_responsive = '<a href="javascript:void(0);" class="nav_icon" onclick="show_nav_dropdown()"><i class="fa fa-bars"></i></a>';
     
     // plaats nav (nav_js is nodig voor JavaScript)
-    echo '<nav class="nav_js" id="responsive_nav">' . $nav_link_home . $nav_link_profile . $nav_link_dashboard . $nav_link_motivation . $nav_link_experiment . $nav_responsive . "</nav>\n";
-
-    // TODO: zet om tot een functie i.p.v. allemaal handmatig te bepalen.
+    echo '<nav class="nav_js" id="responsive_nav">' . $nav_link_home . $nav_link_profile . $nav_link_dashboard /*. $nav_link_motivation */ . $nav_link_experiment . $nav_responsive . "</nav>\n";
 ?>
