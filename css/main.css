@@ -130,6 +130,11 @@ a:hover {
     color: #23683A;
 }
 
+/* Tekst */
+p {
+    line-height: 1.3em;
+}
+
 /* Tabel met EC en toetsen */
 .ec_table {
     width: 90%;
