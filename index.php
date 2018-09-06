@@ -17,7 +17,7 @@
                 <h1>Welkom!</h1>
                 <p>
                     Ah. Je hebt deze pagina kunnen vinden tussen alle URL's en/of
-                    zoekresultaten die het internet rijk is. <i>Good</i>.
+                    zoekresultaten die het internet rijk is. <i>Good</i>!
                 </p>
                 <p>
                     Voordat je verder gaat lezen, ik ben Jarno Overwijk. Lees wat
