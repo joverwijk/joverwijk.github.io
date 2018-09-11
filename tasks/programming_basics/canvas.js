@@ -1,8 +1,8 @@
 /* Standaardvars */
 function def_val(input) {
-    var canvas = document.getElementById("drawable_canvas"); // vind element
-    var draw = canvas.getContext("2d");
-    var reset = draw.clearRect(0, 0, canvas.width, canvas.height);
+    const canvas = document.getElementById("drawable_canvas"); // vind element
+    const draw = canvas.getContext("2d");
+    const reset = draw.clearRect(0, 0, canvas.width, canvas.height);
 
     if (input === 'canvas') {
         return canvas;
