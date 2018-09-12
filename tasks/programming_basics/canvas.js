@@ -1,4 +1,4 @@
-/* Standaardvars */
+/* Standaardwaarden */
 function def_val(input) {
     const canvas = document.getElementById("drawable_canvas"); // vind element
     const draw = canvas.getContext("2d");
