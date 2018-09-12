@@ -26,6 +26,17 @@ function randomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+/* Willekeurige kleur */
+function randomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+
+    for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
 /* Reset canvas */
 function reset() {
     def_val('reset');
@@ -78,7 +89,7 @@ function drawWhatever() {
     //                      X   Y
     def_val('draw').moveTo(250,250);
     console.log("Cursor verplaatst naar (250,250)");
-    def_val('draw').strokeStyle="#0000FF";
+    def_val('draw').strokeStyle = randomColor();
 
     for (let i = 0; i < 50; i++) {
         def_val('draw').lineTo(randomInt(), randomInt());
