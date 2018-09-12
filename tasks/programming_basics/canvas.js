@@ -16,6 +16,16 @@ function def_val(input) {
     }
 }
 
+/* Willekeurige waarde tussen 0 en 500 */
+function randomInt(min, max) {
+    var min = 0;
+    var max = 500;
+
+    min = Math.ceil(min);
+    max = Math.ceil(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 /* Reset canvas */
 function reset() {
     def_val('reset');
@@ -28,7 +38,7 @@ function drawDiamond() {
     def_val('reset');
     console.log("Canvas gereset");
     def_val('draw').beginPath();
-    //           X   Y
+    //                      X   Y
     def_val('draw').moveTo(250,500);
     console.log("Cursor verplaatst naar (250,500)");
     def_val('draw').strokeStyle="#00FF00";
@@ -42,11 +52,12 @@ function drawDiamond() {
     console.log("");
 }
 
+/* Maak een vierkant */
 function drawSquare() {
     def_val('reset');
     console.log("Canvas gereset");
     def_val('draw').beginPath();
-    //            X   Y
+    //                      X   Y
     def_val('draw').moveTo(400,400);
     console.log("Cursor verplaatst naar (400,400)");
     def_val('draw').strokeStyle="#FF0000";
@@ -57,5 +68,25 @@ function drawSquare() {
     console.log("Te tekenen lijnen en te gebruiken kleur geconfigureerd");
     def_val('draw').stroke();
     console.log("Vierkant getekend!");
+    console.log("");
+}
+
+function drawWhatever() {
+    def_val('reset');
+    console.log("Canvas gereset");
+    def_val('draw').beginPath();
+    //                      X   Y
+    def_val('draw').moveTo(250,250);
+    console.log("Cursor verplaatst naar (250,250)");
+    def_val('draw').strokeStyle="#0000FF";
+
+    for (let i = 0; i < 50; i++) {
+        def_val('draw').lineTo(randomInt(), randomInt());
+    }
+
+    def_val('draw').lineTo(250,250);
+    console.log("Te tekenen lijnen en te gebruiken kleur geconfigureerd");
+    def_val('draw').stroke();
+    console.log("Willekeurige 'vorm' getekend!");
     console.log("");
 }
