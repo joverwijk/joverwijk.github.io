@@ -12,6 +12,7 @@ function def_val(input) {
         return reset;
     } else {
         console.error("Geen waarde voor 'input' in functie 'def_val'");
+        console.log("");
     }
 }
 
@@ -19,6 +20,7 @@ function def_val(input) {
 function reset() {
     def_val('reset');
     console.log("Canvas gereset");
+    console.log("");
 }
 
 /* Onderstaande code maakt een diamant */
@@ -37,4 +39,23 @@ function drawDiamond() {
     console.log("Te tekenen lijnen en te gebruiken kleur geconfigureerd");
     def_val('draw').stroke();
     console.log("Diamant getekend!");
+    console.log("");
+}
+
+function drawSquare() {
+    def_val('reset');
+    console.log("Canvas gereset");
+    def_val('draw').beginPath();
+    //            X   Y
+    def_val('draw').moveTo(400,400);
+    console.log("Cursor verplaatst naar (400,400)");
+    def_val('draw').strokeStyle="#FF0000";
+    def_val('draw').lineTo(400,100);
+    def_val('draw').lineTo(100,100);
+    def_val('draw').lineTo(100,400);
+    def_val('draw').lineTo(400,400);
+    console.log("Te tekenen lijnen en te gebruiken kleur geconfigureerd");
+    def_val('draw').stroke();
+    console.log("Vierkant getekend!");
+    console.log("");
 }
