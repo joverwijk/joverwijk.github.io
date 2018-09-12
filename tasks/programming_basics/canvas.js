@@ -82,6 +82,7 @@ function drawSquare() {
     console.log("");
 }
 
+/* Maak... iets...? */
 function drawWhatever() {
     def_val('reset');
     console.log("Canvas gereset");
