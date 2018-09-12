@@ -16,7 +16,7 @@ function def_val(input) {
     }
 }
 
-/* Willekeurige waarde tussen 0 en 500 */
+/* Willekeurige waarde tussen 0 en 500 (credits: MDN) */
 function randomInt(min, max) {
     var min = 0;
     var max = 500;
@@ -26,7 +26,7 @@ function randomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-/* Willekeurige kleur */
+/* Willekeurige kleur (credits: https://stackoverflow.com/questions/1484506/random-color-generator) */
 function randomColor() {
     var letters = '0123456789ABCDEF';
     var color = '#';
