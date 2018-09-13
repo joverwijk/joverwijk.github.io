@@ -28,7 +28,7 @@
     echo $page_content;
 
     // voor GitHub
-    $github_url = str_replace('http://foobar.dev/', 'https://joverwijk.github.io/', $page_content);
+    $github_url = str_replace('http://foobar.dev/', 'https://joverwijk.github.io/html/', $page_content);
     $github_page_content = str_replace('.php', '.html', $github_url);
     // sla inhoud vervolgens op in een XML
     file_put_contents('sitemap.xml', $github_page_content);

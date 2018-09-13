@@ -1,17 +1,26 @@
-<?php ob_start(); // start buffer ?>
 <!DOCTYPE html>
 <html>
     <head>
-        <?php
-            $page_title = 'Home';
-            include('needs/header.php');
-        ?>
-    </head>
+        <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>
+    Home</title>
+
+<link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"/>
+<link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css"/>
+<link rel="stylesheet" type="text/css" media="screen" href="/css/responsive.css"/>
+
+<script src="/js/responsive.js"></script>    </head>
     <body>
-        <?php
-            $nav_link_active = 'home';
-            include('needs/nav.php');
-        ?>
+        <nav class="nav_js" id="responsive_nav"><a class="active" href='/html/index.html'>Home</a>
+<a href='/html/profile.html'>Over mij</a>
+<a href='/html/dashboard.html'>Dashboard</a>
+<a href='/html/motivation.html'>Motivatie</a>
+<a href='/html/experiment.html'>Experimenten</a>
+<a href="javascript:void(0);" class="nav_icon" onclick="show_nav_dropdown()"><i class="fa fa-bars"></i></a></nav>
         <main>
             <section>
                 <h1>Welkom!</h1>
@@ -21,7 +30,7 @@
                 </p>
                 <p>
                     Voordat je verder gaat lezen, ik ben Jarno Overwijk. Lees wat
-                    meer over mij op <a href="profile.<!-- FILEEXT -->" title="Profiel">deze
+                    meer over mij op <a href="profile.html" title="Profiel">deze
                     pagina</a>.
                 </p>
                 <article class="flex flex_home">
@@ -76,18 +85,10 @@
                     <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Badge_js-strict.svg" height="50px" title="JavaScript-logo" alt="JavaScript-logo">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" height="50px" title="HTML5-logo" alt="HTML5-logo">
                 </div>
-                <?php include('needs/footer.php'); ?>
-            </section>
+                <p class="small_right copy clear">
+    ©2018</br>
+    <a href="/sitemap.xml" title="Sitemap">sitemap</a>
+</p>            </section>
         </main>
     </body>
 </html>
-<?php
-    // sla inhoud op in $page_content en wis buffer
-    $page_content = ob_get_clean();
-
-    // postprocessing
-    include('needs/postprocessing.php');
-
-    // sla inhoud na postprocessing op in HTML
-    file_put_contents('html/index.html', $github_page_content);
-?>

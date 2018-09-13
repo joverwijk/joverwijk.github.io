@@ -57,5 +57,5 @@
     include('needs/postprocessing.php');
 
     // sla inhoud na postprocessing op in HTML
-    file_put_contents('dashboard.html', $github_page_content);
+    file_put_contents('html/dashboard.html', $github_page_content);
 ?>

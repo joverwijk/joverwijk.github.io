@@ -30,7 +30,7 @@
                 </div>
                 <h5>Onderwerp 2: Lay-out</h5>
                 <p>
-                    Zie <a href="/experiment2.html">deze pagina</a>. Hier is ook
+                    Zie <a href="/html/experiment2.html">deze pagina</a>. Hier is ook
                     een zijbalk aan toegevoegd.
                 </p>
                 <h5>Onderwerp 3: CSS transformations</h5>
@@ -64,5 +64,5 @@
     include('needs/postprocessing.php');
 
     // sla inhoud na postprocessing op in HTML
-    file_put_contents('experiment.html', $github_page_content);
+    file_put_contents('html/experiment.html', $github_page_content);
 ?>

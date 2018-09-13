@@ -122,11 +122,9 @@ h6 {
 /* A-elementen (links e.d.) */
 a {
     color: #164225;
-    text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
     color: #23683A;
 }
 
@@ -227,6 +225,7 @@ ul {
 .flex_home {
     flex-wrap: nowrap;
     justify-content: center;
+    align-items: baseline;
 }
 
 .flex_home > .flex_home_content {

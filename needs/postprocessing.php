@@ -11,16 +11,21 @@
     */
 
     // vervang '<!-- FILEEXTXML -->' door php
+    // vervang '<!-- FOLDER -->' door niets
     // vervang '<!-- FILEEXT -->' door php
     $xml_page_content = str_replace('<!-- FILEEXTXML -->', 'php', $page_content);
-    $proc_page_content = str_replace('<!-- FILEEXT -->', 'php', $xml_page_content);
+    $folder_location = str_replace('<!-- FOLDER -->', '', $xml_page_content);
+    $processed_page_content = str_replace('<!-- FILEEXT -->', 'php', $folder_location);
     
     // voeg hier meer te processeren spul toe.
     
     // toon pagina
-    echo $proc_page_content;
+    echo $processed_page_content;
 
-    // extra spul voor GitHub
+    // vervang '<!-- FILEEXTXML -->' door xml
+    // vervang '<!-- FOLDER -->' door /html
+    // vervang '<!-- FILEEXT -->' door html
     $xml_github = str_replace('<!-- FILEEXTXML -->', 'xml', $page_content);
-    $github_page_content = str_replace('<!-- FILEEXT -->', 'html', $xml_github);
+    $folder_location_github = str_replace('<!-- FOLDER -->', '/html', $xml_github);
+    $github_page_content = str_replace('<!-- FILEEXT -->', 'html', $folder_location_github);
 ?>

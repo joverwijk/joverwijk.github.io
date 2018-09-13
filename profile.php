@@ -69,5 +69,5 @@
     include('needs/postprocessing.php');
 
     // sla inhoud na postprocessing op in HTML
-    file_put_contents('profile.html', $github_page_content);
+    file_put_contents('html/profile.html', $github_page_content);
 ?>
