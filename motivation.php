@@ -59,7 +59,39 @@
                     een taak wordt door een heleboel factoren bepaald, bijvoorbeeld door enthousiasme
                     ervoor of de consequentie die volgt op het niet voltooien van een taak.
                 </p>
-                <h3>Motivatie volgens Dan Pink</h3>
+                <h3>Dan Pink: The Puzzle of Motivation</h3>
+                <h4>Motivatie volgens Dan Pink</h4>
+                <p>
+                    Volgens Dan Pinks TED Talk, is motivatie op twee manieren te benaderen - door extrinsieke,
+                    oftewel beloningen en straffen voor het al dan niet voltooien van een taak en door
+                    intrinsieke, oftewel door motivatie wat vanuit het innerste komt, bijvoorbeeld
+                    autonomie, zinvol zijn (naar jouw mening), meesterschap en een knock-out.
+                </p>
+                <h4>Wat bepaalt of iemand gemotiveerd is?</h4>
+                <p>
+                    In de 20ste eeuw werkte extrinsieke motivatie vooral, in de 21ste is dit vooral
+                    intrinsieke, omdat veel taken die door beloningen en straffen kunnen worden gedaan,
+                    veelal geautomatiseerd zijn. Hierdoor speelt de linkerhersenhelft - de helft die
+                    vooral werkt op basis van regeltjes en regelmaat - minder een rol en wordt er
+                    juist meer verwacht van de rechterhelft - de helft waaruit creativiteit en conceptueel
+                    werk komt.
+                </p>
+                <h4>Hoe kun je invloed uitoefenen op motivatie?</h4>
+                <p>
+                    Aangezien motivatie á-la 20ste eeuw (dat is, met beloningen en straffen) niet of
+                    nauwelijks meer werkt in het bedrijfsleven, wordt er meer gefocust op het intrinsieke.
+                    Hierbij kan worden verstaan het niet meer volgen van een vast rooster, werk uitvoeren
+                    waar de persoon wilt en/of zo nu dan een dag(deel) waarop totaal niet meer de focus
+                    ligt op het eigenlijke werk.
+                </p>
+                <p>
+                    Bedrijven die dit bijvoorbeeld doen, zijn Google en Atlassian. Zij hebben
+                    zogenaamde 20% tijd-werkdagen. Hierbij werkt de werknemer ongeveer 20% van de
+                    dag aan iets anders. Uit deze speciale werktijd kwamen bijvoorbeeld dingen als
+                    Gmail en Google Nieuws.
+                </p>
+                <h3>Motivatie in verschillende artikelen</h3>
+                <p>TODO...</p>
                 <h2>Bronnen</h2>
                 <ul>
                     <li>
@@ -75,7 +107,7 @@
                         Nederlandstalige Wikipedia (3 juli 2018). Geraadpleegd op 13 september 2018, van <a href="https://nl.wikipedia.org/w/index.php?title=Intrinsieke_en_extrinsieke_motivatie&amp;oldid=51895556">https://nl.wikipedia.org/w/index.php?title=Intrinsieke_en_extrinsieke_motivatie&amp;oldid=51895556</a>.
                     </li>
                     <li>
-                        Pink, D. (2009). The puzzle of motivation. Gepresenteerd op de TEDGlobal 2009, Oxford, Groot-Brittannië. Geraadpleegd van <a href="https://www.ted.com/talks/dan_pink_on_motivation?language=en">https://www.ted.com/talks/dan_pink_on_motivation?language=en</a>.
+                        Pink, D. (2009). <i>The Puzzle of Motivation</i>. Gepresenteerd op de TEDGlobal 2009, Oxford, Groot-Brittannië. Geraadpleegd van <a href="https://www.ted.com/talks/dan_pink_on_motivation?language=en">https://www.ted.com/talks/dan_pink_on_motivation?language=en</a>.
                     </li>
                 </ul>
                 <?php include('needs/footer.php'); ?>
