@@ -36,8 +36,9 @@ function compare_incompatibles() {
     const random_alert = [
         "Ik zei toch dat het niet ging werken", "*zucht*", "Waarom klik je dan alsnog?",
         "Hoe vaak moet ik nog zeggen dat het niet werkt?", "Soms vraag ik me af of... Nee... 't Is toch al een verloren zaak...",
-        ":rolling_eyes:", "Whatever. You were a lost cause anyway.", "*ANGRYNESS INTENSIFIES*",
-        "Tja... Als die knop er toch staat...", "Mr. Tryhard :slow_clap:", "Error: Did not work."
+        ":rolling_eyes:", "Whatever. It was a lost cause anyway.", "*ANGRYNESS INTENSIFIES*",
+        "Tja... Als die knop er toch staat...", "Mr. Tryhard :slow_clap:", "Error: Did not work.",
+        "403: Forbidden"
     ]
 
     let choose_random_alert = random_alert[Math.floor(Math.random() * random_alert.length)];
