@@ -4,14 +4,3 @@ body {
     background-color: #164225;
     font-family: 'Source Sans Pro', sans-serif;
 }
-
-canvas {
-    display: block;
-    margin: 0 auto;
-    background-color: #FAFAFA;
-    border: 1px solid #000;
-}
-
-button {
-    text-align: center;
-}
