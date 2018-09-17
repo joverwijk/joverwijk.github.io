@@ -1,4 +1,6 @@
 // geef 'even' of 'oneven' op basis van laatste karakter
+
+// TODO: Fix
 function evaluate_number() {
     let value_to_check = document.getElementById("number_to_check").value;
 
