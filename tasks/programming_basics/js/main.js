@@ -31,9 +31,18 @@ function compare_incompatibles() {
     const value = 1400;
     const string = 'Ik woon in Naboo';
 
+    const random_alert = [
+        "Ik zei toch dat het niet ging werken", "*zucht*", "Waarom klik je dan alsnog?",
+        "Hoe vaak moet ik nog zeggen dat het niet werkt?", "Soms vraag ik me af of... Nee... 't Is toch al een verloren zaak...",
+        ":rolling_eyes:", "Whatever. You were a lost cause anyway.", "*ANGRYNESS INTENSIFIES*",
+        "Tja... Als die knop er toch staat...", "Mr. Tryhard :slow_clap:", "Error: Did not work."
+    ]
+
+    let choose_random_alert = random_alert[Math.floor(Math.random() * random_alert.length)];
+
     if (value == string) {
         alert("Ondanks de verschillende typen werkt dit blijkbaar wel...");
     } else {
-        alert("Ik zei toch dat het niet ging werken?");
+        alert("Kan niet vergelijken!\n" + choose_random_alert);
     }
 }
