@@ -1,23 +1,39 @@
-// Even voorstellen...
-const first_name = 'Jarno',
-    last_name = 'Overwijk';
-let age = 17;
+// geef 'even' of 'oneven' op basis van laatste karakter
+function evaluate_number() {
+    let value_to_check = document.getElementById("number_to_check").value;
 
-console.log(`Mijn naam is ${first_name} ${last_name} en ik ben ${age} jaar oud.`);
-console.log();
+    value_to_check = Number(value_to_check);
 
-// Bereken prijs van 200 appels á €0,59
-const apple_price = 0.59,
-    amount = 200,
-    sum = apple_price * amount;
+    if (isNaN(value_to_check)) {
+        alert("Dit is geen getal");
+    } else if (value_to_check % 2 == 0) {
+        alert("Dit getal is even");
+    } else {
+        alert("Dit getal is oneven");
+    }
+}
 
-console.log(`De prijs van 200 appels á €0,59 is €${sum}.`);
-console.log();
+// Haal het negatieve weg.
+function is_cool() {
+    let statement = document.getElementById("very_cool");
 
-// >:)
-const please_visit = 'Please visit the HZ University of Applied Sciences.';
+    let new_statement = statement.innerText = "Programming is so cool!";
 
-// Regex
-const mad_science = please_visit.replace(/applied sciences/i, 'Mad Scientists');
+    return new_statement;
+}
 
-console.log(mad_science);
+/* 
+    Vergelijk 1400 met 'Ik woon in Naboo'
+
+    Dit gaat niet werken, omdat beide waarden niet van hetzelfde type zijn.
+*/
+function compare_incompatibles() {
+    const value = 1400;
+    const string = 'Ik woon in Naboo';
+
+    if (value == string) {
+        alert("Ondanks de verschillende typen werkt dit blijkbaar wel...");
+    } else {
+        alert("Ik zei toch dat het niet ging werken?");
+    }
+}
