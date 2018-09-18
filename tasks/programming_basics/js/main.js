@@ -2,9 +2,9 @@
 function evaluate_number() {
     let value_to_check = document.getElementById("number_to_check").value;
 
-    if (value_to_check.match(/[0-9.]/) && value_to_check % 2 == 0) {
+    if (value_to_check.match(/[0-9]/) && value_to_check % 2 == 0) {
         alert("Dit getal is even");
-    } else if (value_to_check.match(/[0-9.]/) && Math.abs(value_to_check % 2) == 1) {
+    } else if (value_to_check.match(/[0-9]/) && Math.abs(value_to_check % 2) == 1) {
         alert("Dit getal is oneven");
     } else {
         alert("Dit is geen getal");
