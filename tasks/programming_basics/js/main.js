@@ -1,3 +1,5 @@
+/* TYPES & VARIABLES */
+
 // geef 'even' of 'oneven' op basis van laatste karakter
 function evaluate_number() {
     let value_to_check = document.getElementById("number_to_check").value;
@@ -46,5 +48,70 @@ function compare_incompatibles() {
         alert("Ondanks de verschillende typen werkt dit blijkbaar wel...");
     } else {
         alert("Kan niet vergelijken!\n" + choose_random_alert);
+    }
+}
+
+/* CONDITIONALS */
+// voldoende voor PB met if...else-structuur
+function passed_pb_ifelse_statement() {
+    let mark = document.getElementById("mark_ifelse").value;
+    let mark_number = Number(mark);
+
+    if (mark_number < 6) {
+        alert("Onvoldoende voor Programming Basics");
+    } else if (mark_number >= 6 && mark_number < 7) {
+        alert("Voldoende voor Programming Basics");
+    } else if (mark_number >= 7 && mark_number <= 9) {
+        alert("Goed voor Programming Basics");
+    } else if (mark_number > 9) {
+        alert("Uitmuntend voor Programming Basics")
+    } else {
+        alert("Dit is geen getal");
+    }
+}
+
+// voldoende voor PB met switch-structuur
+function passed_pb_switch_statement() {
+    let mark = document.getElementById("mark_switch").value;
+    let mark_number = Number(mark);
+
+    switch (true) {
+        case (mark_number < 6):
+            alert("Onvoldoende voor Programming Basics");
+        break;
+        case (mark_number >= 6 && mark_number < 7):
+            alert("Voldoende voor Programming Basics");
+        break;
+        case (mark_number >= 7 && mark_number <= 9):
+            alert("Goed voor Programming Basics");
+        break;
+        case (mark_number > 9):
+            alert("Uitmuntend voor Programming Basics");
+        break;
+        default:
+            alert("Dit is geen getal");
+    }
+}
+
+// het leerkrachtprobleem
+function teacher_in_train() {
+    let purchased_book = true;
+    let job = 'teacher';
+    let in_train = false;
+
+    if (purchased_book == true && job == 'teacher' && in_train == true) {
+        console.log("Finally I can enjoy my book!");
+    } else if (purchased_book == false && job == 'teacher' && in_train == true) {
+        console.log("I'm in the train, yet don't have anything to read. :(");
+    } else if (purchased_book == true && job != 'teacher' && in_train == true) {
+        console.log("Finally I can enjoy my book, even though I'm not a teacher!");
+    } else if (purchased_book == true && job == 'teacher' && in_train == false) {
+        console.log("It's too busy to read a book!");
+    } else if (purchased_book == false && job == 'teacher' && in_train == false) {
+        console.log("I don't have a book and am not in the train.");
+    } else if (purchased_book == false && job != 'teacher' && in_train == false) {
+        console.log("I don't have a book, nor am I a teacher nor am I in the train.");
+    } else {
+        console.log("What even is this sorcery?");
     }
 }

@@ -9,21 +9,38 @@
         <script src="js/main.js"></script>
     </head>
     <body>
-        <h1>Even of oneven?</h1>
+        <h1>Types & Variables</h1>
+        <h2>Even of oneven?</h2>
         <input id="number_to_check" type="text">
         <button onclick="evaluate_number()">Even of oneven?</button>
-        <h1>On programming</h1>
+        <h2>On programming</h2>
         <p id="very_cool">
             Programming is not so cool!
         </p>
         <button onclick="is_cool()">Verander het statement</button>
-        <h1>Niet-compatibele variabelen</h1>
+        <h2>Niet-compatibele variabelen</h2>
         <p>
             '1400' en 'Ik woon in Naboo' zijn niet van hetzelfde type. De een is een
             getal, de andere een regel.
         </p>
         <p>Toch vergelijken?</p>
         <button onclick="compare_incompatibles()">Klik dan hier!</button>
+
+        <h1>Conditionals</h1>
+        <h2>Voldoende voor Programming Basics</h2>
+        <h3>if...else-structuur</h3>
+        <input type="number" id="mark_ifelse">
+        <button onclick="passed_pb_ifelse_statement()">Behaald?</button>
+        <h3>Switch-structuur</h3>
+        <input type="number" id="mark_switch">
+        <button onclick="passed_pb_switch_statement()">Behaald?</button>
+        <h2>De leerkracht, zijn/haar boek en de trein</h2>
+        <p><a onclick="teacher_in_train()" style="text-decoration:underline">Klik hier en bekijk de console</a>. De waarde die gebruikt zijn:</p>
+        <pre>
+            let purchased_book = true;
+            let job = 'teacher';
+            let in_train = false;
+        </pre>
     </body>
 </html>
 <!-- TODO: Link dit gebeuren m.b.v. navigatiebalk. Zet om naar PHP -->
