@@ -4,9 +4,7 @@
 function evaluate_number() {
     let value_to_check = document.getElementById("number_to_check").value;
 
-    value_to_check = Number(value_to_check);
-
-    if (isNaN(value_to_check)) {
+    if (value_to_check.match(/[a-z]/i)) {
         alert("Dit is geen getal");
     } else if (value_to_check % 2 == 0) {
         alert("Dit getal is even");
@@ -34,7 +32,7 @@ function compare_incompatibles() {
     const string = 'Ik woon in Naboo';
 
     const random_alert = [
-        "Ik zei toch dat het niet ging werken", "*zucht*", "Waarom klik je dan alsnog?",
+        "Ik zei toch dat het niet ging werken?", "*zucht*", "Waarom klik je dan alsnog?",
         "Hoe vaak moet ik nog zeggen dat het niet werkt?", "Soms vraag ik me af of... Nee... 't Is toch al een verloren zaak...",
         ":rolling_eyes:", "Whatever. It was a lost cause anyway.", "*ANGRYNESS INTENSIFIES*",
         "Tja... Als die knop er toch staat...", "Mr. Tryhard :slow_clap:", "Error: Did not work.",
