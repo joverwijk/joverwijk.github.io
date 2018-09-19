@@ -38,7 +38,7 @@
     
     JavaScript hiervoor is te vinden in 'js/responsive.js'.
 */
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
     /* Toon alleen de Home-knop */
     nav > a:not(:first-child) {
         display: none;

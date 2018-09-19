@@ -27,8 +27,8 @@ main {
     bottom: 0;
     height: 100%;
     margin: auto;
-    box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.5);
     -webkit-box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.5);
 }
 
 /* Gedeelte met 'eigenlijke' inhoud */
@@ -47,8 +47,8 @@ nav {
     position: sticky;
     overflow: hidden;
     background-color: #FAFAFA;
-    box-shadow: 0px 16px 15px -5px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: 0px 16px 15px -5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 16px 15px -5px rgba(0, 0, 0, 0.5);
     z-index: 9999;
 }
 
@@ -67,10 +67,14 @@ nav > a:hover {
     text-decoration: none;
 }
 
-nav > a.active,
 nav > a.active {
     background-color: #297B45;
     color: #FFF !important;
+}
+
+nav > a.dropdown::after {
+    content: "∨";
+    padding-left: 0.625em;
 }
 
 nav > a.right {
