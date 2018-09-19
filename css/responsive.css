@@ -8,7 +8,7 @@
     
     Zorgt er ook voor dat de EC-tabel een scrollbalk gaat tonen.
 */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
     main {
         width: 95%;
     }
@@ -38,7 +38,7 @@
     
     JavaScript hiervoor is te vinden in 'js/responsive.js'.
 */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 750px) {
     /* Toon alleen de Home-knop */
     nav > a:not(:first-child) {
         display: none;

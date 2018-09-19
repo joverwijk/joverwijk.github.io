@@ -5,18 +5,23 @@
     $active_dashboard = '';
     $active_experiment = '';
     $active_motivation = '';
+    $active_job_image = '';
+
+    $class_active = ' class="active"';
 
     // bepaal welke variabele actief moet zijn
     if ($nav_link_active == 'home') {
-        $active_home = ' class="active"';
+        $active_home = $class_active;
     } elseif ($nav_link_active == 'profile') {
-        $active_profile = ' class="active"';
+        $active_profile = $class_active;
     } elseif ($nav_link_active == 'dashboard') {
-        $active_dashboard = ' class="active"';
+        $active_dashboard = $class_active;
     } elseif ($nav_link_active == 'experiment') {
-        $active_experiment = ' class="active"';
+        $active_experiment = $class_active;
     } elseif ($nav_link_active == 'motivation') {
-        $active_motivation = ' class="active"';
+        $active_motivation = $class_active;
+    } elseif ($nav_link_active == 'job_image') {
+        $active_job_image = $class_active;
     }
 
     // links
@@ -25,10 +30,11 @@
     $nav_link_dashboard = "<a" . $active_dashboard . " href='<!-- FOLDER -->/dashboard.<!-- FILEEXT -->'>Dashboard</a>\n";
     $nav_link_experiment = "<a" . $active_experiment . " href='<!-- FOLDER -->/experiment.<!-- FILEEXT -->'>Experimenten</a>\n";
     $nav_link_motivation = "<a" . $active_motivation . " href='<!-- FOLDER -->/motivation.<!-- FILEEXT -->'>Motivatie</a>\n";
+    $nav_link_job_image = "<a" . $active_job_image . " href='<!-- FOLDER -->/job_image.<!-- FILEEXT -->'>Beroepsbeeld</a>\n";
 
     // responsief
     $nav_responsive = '<a href="javascript:void(0);" class="nav_icon" onclick="show_nav_dropdown()"><i class="fa fa-bars"></i></a>';
     
     // plaats nav (nav_js is nodig voor JavaScript)
-    echo '<nav class="nav_js" id="responsive_nav">' . $nav_link_home . $nav_link_profile . $nav_link_dashboard . $nav_link_motivation . $nav_link_experiment . $nav_responsive . "</nav>\n";
+    echo '<nav class="nav_js" id="responsive_nav">' . $nav_link_home . $nav_link_profile . $nav_link_dashboard . $nav_link_motivation . $nav_link_job_image . $nav_link_experiment . $nav_responsive . "</nav>\n";
 ?>

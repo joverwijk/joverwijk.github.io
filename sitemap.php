@@ -20,6 +20,7 @@
     echo generate_entry('dashboard');
     echo generate_entry('experiment');
     echo generate_entry('motivation');
+    echo generate_entry('job_image');
     echo '</urlset>';
 
     // sla inhoud op in $page_content en wis buffer
