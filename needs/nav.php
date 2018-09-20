@@ -8,6 +8,10 @@
     $active_job_image = '';
     $active_tasks = ' class="dropdown"';
 
+    // standaardwaarde variabelen dropdown
+    $active_programming_basics = '';
+
+    // standaardklasse
     $class_active = ' class="active"';
 
     // bepaal welke variabele actief moet zijn
@@ -26,6 +30,17 @@
     } elseif ($nav_link_active == 'tasks') {
         $active_tasks = ' class="active dropdown"';
     }
+
+    // bepaal, van de dropdownlinks, welke er actief moet zijn
+    if ($nav_link_active == 'tasks_programming_basics') {
+        $active_programming_basics = $class_active;
+    }
+
+    // dropdownlinks
+    $tasks_programming_basics = '<a ' . $active_programming_basics . " href='<!-- FOLDER -->/tasks/programming_basics/index.<!-- FILEEXT -->'>Programming Basics</a>\n";
+
+    // dropdown
+    $tasks_dropdown = "<div class='dropdown_content'>" . $tasks_programming_basics . "</div>\n";
 
     // links
     $nav_link_home = "<a" . $active_home . " href='<!-- FOLDER -->/index.<!-- FILEEXT -->'>Home</a>\n";

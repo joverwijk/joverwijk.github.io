@@ -17,7 +17,7 @@
         ?>
         <main>
             <section>
-                <h1>Beroepsbeeld</h1>
+                <h1>Programming Basics</h1>
                 <p>
                     SOON...^tm
                 </p>
