@@ -21,6 +21,9 @@
     echo generate_entry('experiment');
     echo generate_entry('motivation');
     echo generate_entry('job_image');
+    echo generate_entry('tasks/index');
+    echo generate_entry('tasks/programming_basics/index');
+    echo generate_entry('tasks/computer_science_basics/index');
     echo '</urlset>';
 
     // sla inhoud op in $page_content en wis buffer

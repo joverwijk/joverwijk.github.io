@@ -38,9 +38,10 @@
     
     JavaScript hiervoor is te vinden in 'js/responsive.js'.
 */
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 875px) {
     /* Toon alleen de Home-knop */
-    nav > a:not(:first-child) {
+    nav > a:not(:first-child),
+    nav > div.dropdown {
         display: none;
     }
 
@@ -62,12 +63,26 @@
         overflow: visible;
     }
 
-    .nav_responsive > a {
+    .nav_responsive > a,
+    .nav_responsive > div.dropdown,
+    .nav_responsive > div.dropdown > a {
         float: none;
         display: block !important;
+        width: 100%;
         text-align: left;
         background-color: #FFF;
-        z-index: 9999;
+    }
+    
+    nav > div.dropdown > div.dropdown_content {
+        float: none;
+        position: relative;
+        display: none !important;
+    }
+
+    nav > div.dropdown:hover > div.dropdown_content {
+        display: inline-block !important;
+        z-index: 2;
+        margin-top: 0;
     }
 }
 

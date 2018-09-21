@@ -19,8 +19,17 @@
             <section>
                 <h1>Opdrachten</h1>
                 <p>
-                    SOON...^tm
+                    Onder deze pagina worden allerlei opdrachten verzameld die
+                    zijn gemaakt in één van de mappen die deze website rijk is.
                 </p>
+                <p>
+                    Wél is het zo dat dit niet opdrachten betreft die zijn gemaakt
+                    voor de <i>studieloopbaanoriëntatie</i>. Deze staan in de navigatiebalk.
+                </p>
+                <h2><i>Programming Basics</i></h2>
+                <p>stuff</p>
+                <h2><i>Computer Science Basics</i></h2>
+                <p>stuff2</p>
                 <?php include($root . '/needs/footer.php'); ?>
             </section>
         </main>

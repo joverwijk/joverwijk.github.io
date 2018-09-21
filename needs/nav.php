@@ -10,6 +10,7 @@
 
     // standaardwaarde variabelen dropdown
     $active_programming_basics = '';
+    $active_computer_science_basics = '';
 
     // standaardklasse
     $class_active = ' class="active"';
@@ -28,19 +29,22 @@
     } elseif ($nav_link_active == 'job_image') {
         $active_job_image = $class_active;
     } elseif ($nav_link_active == 'tasks') {
-        $active_tasks = ' class="active dropdown"';
+        $active_tasks = $class_active;
     }
 
     // bepaal, van de dropdownlinks, welke er actief moet zijn
-    if ($nav_link_active == 'tasks_programming_basics') {
+    if ($nav_link_active == 'programming_basics') {
         $active_programming_basics = $class_active;
+    } elseif ($nav_link_active == 'computer_science_basics') {
+        $active_computer_science_basics = $class_active;
     }
 
     // dropdownlinks
     $tasks_programming_basics = '<a ' . $active_programming_basics . " href='<!-- FOLDER -->/tasks/programming_basics/index.<!-- FILEEXT -->'>Programming Basics</a>\n";
+    $tasks_computer_science_basics = '<a ' . $active_computer_science_basics . " href='<!-- FOLDER -->/tasks/computer_science_basics/index.<!-- FILEEXT -->'>Computer Science Basics</a>\n";
 
     // dropdown
-    $tasks_dropdown = "<div class='dropdown_content'>" . $tasks_programming_basics . "</div>\n";
+    $tasks_dropdown = "<div class='dropdown_content'>" . $tasks_programming_basics . $tasks_computer_science_basics . "</div>\n";
 
     // links
     $nav_link_home = "<a" . $active_home . " href='<!-- FOLDER -->/index.<!-- FILEEXT -->'>Home</a>\n";
@@ -49,7 +53,7 @@
     $nav_link_experiment = "<a" . $active_experiment . " href='<!-- FOLDER -->/experiment.<!-- FILEEXT -->'>Experimenten</a>\n";
     $nav_link_motivation = "<a" . $active_motivation . " href='<!-- FOLDER -->/motivation.<!-- FILEEXT -->'>Motivatie</a>\n";
     $nav_link_job_image = "<a" . $active_job_image . " href='<!-- FOLDER -->/job_image.<!-- FILEEXT -->'>Beroepsbeeld</a>\n";
-    $nav_link_tasks = "<a" . $active_tasks . " href='<!-- FOLDER -->/tasks/index.<!-- FILEEXT -->'>Opdrachten</a>\n";
+    $nav_link_tasks = "<div class='dropdown'>\n<a" . $active_tasks . " href='<!-- FOLDER -->/tasks/index.<!-- FILEEXT -->'>Opdrachten&nbsp;<i class='fa fa-caret-down'></i></a>\n" . $tasks_dropdown . "\n</div>\n";
 
     // responsief
     $nav_responsive = '<a href="javascript:void(0);" class="nav_icon" onclick="show_nav_dropdown()"><i class="fa fa-bars"></i></a>';

@@ -28,6 +28,7 @@ main {
     height: 100%;
     margin: auto;
     -webkit-box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.5);
     box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.5);
 }
 
@@ -40,20 +41,20 @@ section {
 nav {
     top: 0;
     left: 0;
-    height: 4em;
     width: 100%;
     margin: 0;
     padding: 0;
+    height: 4.125em;
     position: sticky;
-    overflow: hidden;
     background-color: #FAFAFA;
     -webkit-box-shadow: 0px 16px 15px -5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 16px 15px -5px rgba(0,0,0,0.5);
     box-shadow: 0px 16px 15px -5px rgba(0, 0, 0, 0.5);
     z-index: 5001;
 }
 
 nav > a,
-nav > button {
+nav > div.dropdown > a {
     text-align: center;
     padding: 1.5em;
     color: #111;
@@ -63,45 +64,50 @@ nav > button {
 }
 
 nav > a:hover,
-nav > button:hover {
+nav > div.dropdown > a:hover {
     background-color: #69A27C;
     color: #111 !important;
     text-decoration: none;
 }
 
 nav > a.active,
-nav > button.active {
+nav > div.dropdown > a.active,
+div.dropdown > div.dropdown_content > a.active {
     background-color: #297B45;
     color: #FFF !important;
 }
 
-/* Dropdown */
-nav > button.dropdown::after {
-    content: "∨";
-    padding-left: 0.625em;
+/* De dropdown */
+div.dropdown {
+    float: left;
 }
 
-nav > button.dropdown > div.dropdown_content {
+div.dropdown .dropdown_content {
     display: none;
+    float: none;
+    position: absolute;
     background-color: #FAFAFA;
+    -webkit-box-shadow: 0px 16px 15px -5px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 16px 15px -5px rgba(0,0,0,0.5);
+    box-shadow: 0px 16px 15px -5px rgba(0,0,0,0.5);
     z-index: 5002;
 }
 
-nav > button.dropdown > div.dropdown_content:hover {
-    display: relative;
+div.dropdown:hover .dropdown_content {
+    display: block;
+    position: absolute;
+    margin-top: 4.125em;
 }
 
-nav > button.dropdown > div.dropdown_content > a {
-    padding: 1.5em;
+div.dropdown .dropdown_content a {
+    padding: 1.1em;
+    display: block;
     text-decoration: none;
+    color: #111 !important;
 }
 
-nav > button.dropdown > div.dropdown_content > a:hover {
+div.dropdown .dropdown_content a:hover {
     background-color: #EBEBEB;
-}
-
-nav > button.dropdown > div.dropdown_content > a.active {
-    background-color: #BBB;
 }
 
 /* Hamburgericoontje voor responsiefheid */
