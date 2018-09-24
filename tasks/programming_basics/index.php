@@ -9,6 +9,7 @@
             $page_title = 'Programming Basics';
             include($root . '/needs/header.php');
         ?>
+        <script src="/tasks/programming_basics/js/main.js"></script>
     </head>
     <body>
         <?php

@@ -63,7 +63,7 @@ function passed_pb_ifelse_statement() {
         alert("Voldoende voor Programming Basics");
     } else if (mark_number >= 7 && mark_number <= 9) {
         alert("Goed voor Programming Basics");
-    } else if (mark_number > 9) {
+    } else if (mark_number > 9 && mark_number <= 10) {
         alert("Uitmuntend voor Programming Basics")
     } else {
         alert("Dit is geen getal");
@@ -85,11 +85,11 @@ function passed_pb_switch_statement() {
         case (mark_number >= 7 && mark_number <= 9):
             alert("Goed voor Programming Basics");
         break;
-        case (mark_number > 9):
+        case (mark_number > 9 && mark_number <= 10):
             alert("Uitmuntend voor Programming Basics");
         break;
         default:
-            alert("Dit is geen getal");
+            alert("Dit is geen getal/Wat is dit voor resultaat?!");
     }
 }
 
@@ -115,3 +115,54 @@ function teacher_in_train() {
         console.log("What even is this sorcery?");
     }
 }
+
+/* LOOPS; TODO: in website verwerken */
+// opdracht 1
+console.log("Delen door 4");
+
+let i = 0;
+
+while (i <= 40) {
+    if (i % 4 == 0) {
+        console.log(`${i} is deelbaar door 4`);
+    } else {
+        console.log(`${i} is niet deelbaar door 4`);
+    }
+    i++;
+}
+
+// opdracht 2
+console.log("Fiboniaccireeks");
+
+let j = 1;
+let k;
+let iterations = 0;
+
+while (iterations <= 10) {
+    Number(j);
+    Number(k);
+
+    if (k == null) {
+        console.log(j);
+        console.log(j);
+        k = j + j;
+        console.log(k);
+    } else {
+        k = j + k;
+        console.log(k);
+        j = k - j;
+    }
+    iterations++;
+}
+
+// opdracht 3
+console.log("Tel getallen in array op");
+
+let array = [2, 4, 8, 9, 12, 13];
+let sum;
+
+for (i = 0; i <= array.length; i++) {
+    sum += array[i];
+}
+
+console.log(sum);
