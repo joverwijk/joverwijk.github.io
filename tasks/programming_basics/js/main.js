@@ -132,13 +132,13 @@ while (i <= 40) {
 }
 
 // opdracht 2
-console.log("Fiboniaccireeks");
+console.log("Fibonaccireeks");
 
 let j = 1;
 let k;
-let iterations = 0;
+let l = 0;
 
-while (iterations <= 10) {
+while (l <= 10) {
     Number(j);
     Number(k);
 
@@ -152,17 +152,16 @@ while (iterations <= 10) {
         console.log(k);
         j = k - j;
     }
-    iterations++;
+    l++;
 }
 
 // opdracht 3
 console.log("Tel getallen in array op");
 
-let array = [2, 4, 8, 9, 12, 13];
-let sum;
+const array = [2, 4, 8, 9, 12, 13];
+let sum = 0;
 
-for (i = 0; i <= array.length; i++) {
-    sum += array[i];
+for (let m = 0; m < array.length; m++) {
+    sum += array[m];
 }
-
 console.log(sum);
