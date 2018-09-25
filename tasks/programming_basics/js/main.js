@@ -134,25 +134,25 @@ while (i <= 40) {
 // opdracht 2
 console.log("Fibonaccireeks");
 
-let j = 1;
-let k;
-let l = 0;
+let fib_a = 1;
+let fib_b;
+let j = 0;
 
-while (l <= 10) {
-    Number(j);
-    Number(k);
+while (j <= 10) {
+    Number(fib_a);
+    Number(fib_b);
 
-    if (k == null) {
-        console.log(j);
-        console.log(j);
-        k = j + j;
-        console.log(k);
+    if (fib_b == null) {
+        console.log(fib_a);
+        console.log(fib_a);
+        fib_b = fib_a + fib_a;
+        console.log(fib_b);
     } else {
-        k = j + k;
-        console.log(k);
-        j = k - j;
+        fib_b = fib_a + fib_b;
+        console.log(fib_b);
+        fib_a = fib_b - fib_a;
     }
-    l++;
+    j++;
 }
 
 // opdracht 3
@@ -161,7 +161,37 @@ console.log("Tel getallen in array op");
 const array = [2, 4, 8, 9, 12, 13];
 let sum = 0;
 
-for (let m = 0; m < array.length; m++) {
-    sum += array[m];
+for (let k = 0; k < array.length; k++) {
+    sum += array[k];
 }
 console.log(sum);
+
+/* FUNCTIES */
+// opdracht 1
+function fibonacci(num) {
+    let fibonacci_1 = 1;
+    let fibonacci_2;
+
+    for (i = 0; i < num; i++) {
+        Number(fibonacci_1);
+        Number(fibonacci_2);
+
+        if (fibonacci_2 == null) {
+            fibonacci_2 = 0;
+        }
+
+        fibonacci_2 = fibonacci_1 + fibonacci_2;
+        fibonacci_1 = fibonacci_2 - fibonacci_1;
+        console.log(fibonacci_2);
+    }
+}
+
+// opdracht 2
+function countdown(year) {
+    for (let i = 10; i >= 0; i--) {
+        setTimeout(function() {
+            console.log(i);
+        }, 1000);
+    }
+    console.log(`Happy ${year}!`);
+}
