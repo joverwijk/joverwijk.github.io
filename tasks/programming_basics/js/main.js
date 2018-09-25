@@ -188,10 +188,40 @@ function fibonacci(num) {
 
 // opdracht 2
 function countdown(year) {
-    for (let i = 10; i >= 0; i--) {
-        setTimeout(function() {
-            console.log(i);
-        }, 1000);
-    }
-    console.log(`Happy ${year}!`);
+    let i = 10;
+    let timer = setInterval(function(){
+        console.log(i);
+        i = i - 1;
+        if (i <= -1) {
+            clearInterval(timer);
+            console.log(`Happy ${year}!`);
+        }
+    }, 1000);
+}
+
+// opdracht 3
+/*
+    Bij het 'hoisten' worden variabelen als eerste gedeclareerd door de compiler,
+    daarna de functie zelf en daarna pas eventuele functieaanroepen. Dit is een
+    declaratie.
+
+    Als een functie als variabele wordt gedeclareerd (aka expressie), wordt eerst
+    de variabele gehoist, daarna de functieaanroep en dáárna pas de functie. Hierdoor
+    onstaat een Reference-/TypeError, omdat de variabele niet gedefinieerd is.
+*/
+
+// Declaratie
+declaration = 'Ik word, als declaratie, gehoist!';
+
+hoisted_declaration();
+
+function hoisted_declaration() {
+    console.log(declaration);
+}
+
+// Expressie
+hoisted_expression();
+
+const hoisted_expression = function hoisted_fuction() {
+    console.log('Ik word, als expressie, gehoist!');
 }
