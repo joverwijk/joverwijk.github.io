@@ -7,6 +7,7 @@
     $active_motivation = '';
     $active_job_image = '';
     $active_tasks = ' class="dropdown"';
+    $active_blog = '';
 
     // standaardwaarde variabelen dropdown
     $active_programming_basics = '';
@@ -30,6 +31,8 @@
         $active_job_image = $class_active;
     } elseif ($nav_link_active == 'tasks') {
         $active_tasks = $class_active;
+    } elseif ($nav_link_active == 'blog') {
+        $active_blog = $class_active;
     }
 
     // bepaal, van de dropdownlinks, welke er actief moet zijn
@@ -54,11 +57,12 @@
     $nav_link_motivation = "<a" . $active_motivation . " href='<!-- FOLDER -->/motivation.<!-- FILEEXT -->'>Motivatie</a>\n";
     $nav_link_job_image = "<a" . $active_job_image . " href='<!-- FOLDER -->/job_image.<!-- FILEEXT -->'>Beroepsbeeld</a>\n";
     $nav_link_tasks = "<div class='dropdown'>\n<a" . $active_tasks . " href='<!-- FOLDER -->/tasks/index.<!-- FILEEXT -->'>Opdrachten&nbsp;<i class='fa fa-caret-down'></i></a>\n" . $tasks_dropdown . "\n</div>\n";
+    $nav_link_blog = "<a" . $active_blog . " href='<!-- FOLDER -->/blog/index.<!-- FILEEXT -->'>Blog</a>\n";
 
     // responsief
     $nav_responsive = '<a href="javascript:void(0);" class="nav_icon" onclick="show_nav_dropdown()"><i class="fa fa-bars"></i></a>';
     
     // plaats nav (nav_js is nodig voor JavaScript)
     echo '<nav class="nav_js" id="responsive_nav">' . $nav_link_home . $nav_link_profile . $nav_link_dashboard . $nav_link_motivation .
-        $nav_link_job_image . $nav_link_tasks . $nav_link_experiment . $nav_responsive . "</nav>\n";
+        $nav_link_job_image . $nav_link_tasks . $nav_link_blog . $nav_link_experiment . $nav_responsive . "</nav>\n";
 ?>

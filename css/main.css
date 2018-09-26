@@ -119,6 +119,44 @@ nav > a.right {
     display: none;
 }
 
+/* De blogposts */
+.blog_post {
+    padding: 0.5em;
+    background-color: #F3F3F3;
+}
+
+.blog_post:not(:first-child) {
+    border-top: 1px solid #BBB;
+}
+
+.blog_post > .blog_post_heading:not(h2) {
+    margin: 1em 0 0.2em;
+}
+
+.blog_post > h2.blog_post_heading {
+    margin: 0 0 0.2em;
+}
+
+.blog_post > p:not(:last-child) {
+    margin: 0 0 1em;
+}
+
+.blog_post > p:last-child {
+    margin: 0;
+}
+
+/* Datum blogpost */
+.blog_post > p.date {
+    font-size: small;
+    color: #888;
+    float: right;
+}
+
+/* Quotes in de blogpost */
+.blog_post > blockquote {
+    margin-bottom: 1em;
+}
+
 /*****************************************************************************/
 /* DIV's en andere 'kleine' elementen.                                       */
 /*****************************************************************************/
@@ -155,6 +193,14 @@ h5 {
 
 h6 {
     font-size: 105%;
+}
+
+.anchor::before {
+    content: "";
+    display: block;
+    padding-top: 3.5em;
+    margin-top: -3.5em;
+    z-index: -1;
 }
 
 /* A-elementen (links e.d.) */

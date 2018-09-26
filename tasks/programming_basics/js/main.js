@@ -116,7 +116,7 @@ function teacher_in_train() {
     }
 }
 
-/* LOOPS; TODO: in website verwerken */
+/* LOOPS */
 // opdracht 1
 console.log("Delen door 4");
 
