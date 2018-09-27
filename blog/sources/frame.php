@@ -17,11 +17,11 @@
         }
 
         // convert $root, $year and $title to file path
-        $file = $root . "\/blog\/" . $year . '/' . $title . '.md';
+        $file = $root . "/blog/posts/" . $year . '/' . $title . '.md';
 
         // check if file exists, else return warning
         if (!file_exists($file)) {
-            return 'File "/blog/' . $year . '/' . $title . '.md" does not exist!';
+            return 'File "/blog/posts/' . $year . '/' . $title . '.md" does not exist!';
         }
 
         // get content of markdown file
