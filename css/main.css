@@ -123,10 +123,12 @@ nav > a.right {
 .blog_post {
     padding: 0.5em;
     background-color: #F3F3F3;
+    border-top: 1px solid #BBB;
+    border-bottom: 1px solid #BBB;
 }
 
-.blog_post:not(:first-child) {
-    border-top: 1px solid #BBB;
+.blog_post:not(:last-of-type) {
+    margin-bottom: 1.5em;
 }
 
 .blog_post > .blog_post_heading:not(h2) {

@@ -33,8 +33,9 @@
                     persons.
                 </p>
                 <?php
-                    // POSTS
-                    get_post(2018, 'september_surprises');
+                    // POSTS (naming: <month-id>_<name>)
+                    get_post(2018, '09-02_why');
+                    get_post(2018, '09-01_september_surprises');
                 ?>
                 <p class="small_right">
                     Blog created with help of <a href="http://parsedown.org/" title="Parsedown">Parsedown</a>.
