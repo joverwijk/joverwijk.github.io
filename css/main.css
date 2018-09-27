@@ -150,8 +150,19 @@ nav > a.right {
 /* Datum blogpost */
 .blog_post > p.date {
     font-size: small;
-    color: #888;
-    float: right;
+    background-color: #297B45;
+    color: #FFF;
+    margin: -0.6em -0.6em 1em -0.6em;
+    padding: 0.5em;
+    border-bottom: 1px solid #BBB;
+}
+
+.blog_post > p.date > a {
+    color: #E1ECE4;
+}
+
+.blog_post > p.date > a:hover {
+    color: #96BDA3;
 }
 
 /* Quotes in de blogpost */
@@ -200,8 +211,8 @@ h6 {
 .anchor::before {
     content: "";
     display: block;
-    padding-top: 3.5em;
-    margin-top: -3.5em;
+    padding-top: 4em;
+    margin-top: -4em;
     z-index: -1;
 }
 
