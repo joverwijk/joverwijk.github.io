@@ -38,7 +38,7 @@
                     get_post(2018, '09-01_september_surprises');
                 ?>
                 <p class="small_right">
-                    Blog created with help of <a href="http://parsedown.org/" title="Parsedown">Parsedown</a>.
+                    Blog created using <a href="http://parsedown.org/" title="Parsedown">Parsedown</a>.
                 </p>
                 <?php include($root . '/needs/footer.php'); ?>
             </section>
