@@ -34,11 +34,11 @@
 }
 
 /* 
-    Navigatiebalk (update 720px naargelang er meer links worden toegevoegd)
+    Navigatiebalk (update 810px naargelang er meer links worden toegevoegd)
     
     JavaScript hiervoor is te vinden in 'js/responsive.js'.
 */
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 810px) {
     /* Toon alleen de Home-knop */
     nav > a:not(:first-child),
     nav > div.dropdown {
