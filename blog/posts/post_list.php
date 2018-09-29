@@ -13,7 +13,7 @@
             $post_name_formatted = 'Why this blog?';
             break;
 
-        case '09_03_updates_frustrations':
+        case '09-03_updates_frustrations':
             $post_name_formatted = 'Updates and FRUSTRATIONS';
             break;
          
