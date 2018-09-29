@@ -12,6 +12,10 @@
         case '09-02_why':
             $post_name_formatted = 'Why this blog?';
             break;
+
+        case '09_03_updates_frustrations':
+            $post_name_formatted = 'Updates and FRUSTRATIONS';
+            break;
          
         default:
             $post_name_formatted = 'missingno';
