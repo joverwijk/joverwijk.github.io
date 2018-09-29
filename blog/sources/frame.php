@@ -31,6 +31,10 @@
         $parsedown = new ParsedownExtra();
         $post = $parsedown->text($content);
 
+        // replace certain 'keywords' with their intended content
+        $post = str_replace('<!-- PERMALINKTITLE -->', 'Copy link from URL bar in browser', $post);
+        $post = str_replace('<!-- PERMALINK -->', '/blog/posts/individual.php?year=' . $year . '&post=' . $title . '<!-- HTMLEXT -->', $post);
+
         echo('<article class="blog_post">' . $post . '</article>');
     }
 ?>

@@ -15,7 +15,8 @@
     // vervang '<!-- FILEEXT -->' door php
     $xml_page_content = str_replace('<!-- FILEEXTXML -->', 'php', $page_content);
     $folder_location = str_replace('<!-- FOLDER -->', '', $xml_page_content);
-    $processed_page_content = str_replace('<!-- FILEEXT -->', 'php', $folder_location);
+    $php_ext = str_replace('<!-- FILEEXT -->', 'php', $folder_location);
+    $processed_page_content = str_replace('<!-- HTMLEXT -->', '', $php_ext);
     
     // voeg hier meer te processeren spul toe.
     
