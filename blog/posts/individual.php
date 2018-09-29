@@ -59,6 +59,7 @@
 
     // extra postprocessing for GitHub
     $github_page_content = str_replace('/blog/posts/individual.php?year=', '/html/blog/posts/', $github_page_content);
+    $github_page_content = str_replace('&amp;post=', '_', $github_page_content);
     $github_page_content = str_replace('&post=', '_', $github_page_content);
     $github_page_content = str_replace('<!-- HTMLEXT -->', '.html', $github_page_content);
 
