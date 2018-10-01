@@ -225,3 +225,54 @@ hoisted_expression();
 const hoisted_expression = function hoisted_fuction() {
     console.log('Ik word, als expressie, gehoist!');
 }
+
+/* ARRAYS */
+
+// opdracht 1
+function random_lap_time() {
+    const lap_rounds = [
+        2.99, 3.00, 3.01, 4.01, 2.79, 2.88, 3.10, 4.12
+    ];
+
+    let r = Math.floor(Math.random() * lap_rounds.length);
+
+    console.log(lap_rounds[r].toFixed(2));
+}
+
+// opdracht 2
+function show_records_list() {
+    const records = [
+        [
+            "The Who - Pinball Wizard", "Rolling Stones - Exile on main street",
+            "Police - Message in a bottle"
+        ],
+        [
+            "De Dijk - Alle 40 Goed", "Het Goede Doel - Belgie", "Doe Maar - skunk"
+        ]
+    ];
+    for (let i = 0; i < records[0].length; i++) {
+        console.log(records[0][i]);
+    }
+    for (let i = 0; i < records[1].length; i++) {
+        console.log(records[1][i]);
+    }
+}
+
+// opdracht 3
+/**
+ * .filter() werkt beter, omdat je veel minder hoeft te typen om te bereiken wat
+ * je ook kan met een for-loop.
+ */
+function filterable(value) {
+    return value <4;
+}
+
+function show_lap_rounds_less_than_four() {
+    const lap_rounds = [
+        2.99, 3.00, 3.01, 4.01, 2.79, 2.88, 3.10, 4.12
+    ];
+
+    let filtered = lap_rounds.filter(filterable);
+
+    console.log(filtered);
+}
