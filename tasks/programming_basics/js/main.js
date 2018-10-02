@@ -283,6 +283,7 @@ console.log();
 console.log("OBJECTEN!");
 
 // opdracht 1
+// Naamgeving is vrij simpel: lap_x, waar x een nummer is
 const lap_times = {
     lap_1: 55.99,
     lap_2: 63.00,
