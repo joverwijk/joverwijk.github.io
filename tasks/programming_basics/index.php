@@ -10,8 +10,9 @@
             include($root . '/needs/header.php');
         ?>
         <script src="/tasks/programming_basics/js/main.js"></script>
-        <script src="/tasks/programming_basics/js/functions.js"></script>
+        <!-- <script src="/tasks/programming_basics/js/functions.js"></script>
         <script src="/tasks/programming_basics/js/arrays.js"></script>
+        <script src="/tasks/programming_basics/js/objects.js"></script> -->
     </head>
     <body>
         <?php

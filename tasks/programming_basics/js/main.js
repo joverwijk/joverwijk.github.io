@@ -219,12 +219,12 @@ function hoisted_declaration() {
     console.log(declaration);
 }
 
-// Expressie
-hoisted_expression();
+// Expressie (tijdelijk niet-werkend)
+/* hoisted_expression();
 
 const hoisted_expression = function hoisted_fuction() {
     console.log('Ik word, als expressie, gehoist!');
-}
+} */
 
 /* ARRAYS */
 
@@ -275,4 +275,62 @@ function show_lap_rounds_less_than_four() {
     let filtered = lap_rounds.filter(filterable);
 
     console.log(filtered);
+}
+
+/* INTRO IN OBJECTEN */
+
+console.log();
+console.log("OBJECTEN!");
+
+// opdracht 1
+const lap_times = {
+    lap_1: 55.99,
+    lap_2: 63.00,
+    lap_3: 63.01,
+    lap_4: 54.01,
+    lap_5: 62.79,
+    lap_6: 52.88,
+    lap_7: 53.10,
+    lap_8: 54.12
+}
+
+console.log(lap_times);
+
+// opdracht 2 & 3
+// hours_per_week is uitgaande van 9-5
+const teachers = [
+    {
+        teacher: "Loek",
+        profession: "teacher",
+        brand: "Linux",
+        hours_per_week: 32,
+        salary: 14,
+        salary_per_hour: function() {
+            console.log(`${teachers[0].teacher} earns €${teachers[0].salary} per hour. He works ${teachers[0].hours_per_week} hours a week.`);
+        }
+    },
+    {
+        teacher: "Daan",
+        profession: "teacher",
+        brand: "Arduino",
+        hours_per_week: 32,
+        salary: 16,
+        salary_per_hour: function() {
+            console.log(`${teachers[1].teacher} earns €${teachers[1].salary} per hour. He works ${teachers[1].hours_per_week} hours a week.`);
+        }
+    },
+    {
+        teacher: "Rimmert",
+        profession: "teacher",
+        brand: "Apple",
+        hours_per_week: 24,
+        salary: 15,
+        salary_per_hour: function() {
+            console.log(`${teachers[2].teacher} earns €${teachers[2].salary} per hour. He works ${teachers[2].hours_per_week} hours a week.`);
+        }
+    }
+];
+
+for (let i = 0; i < teachers.length; i++) {
+    console.log(`I have a ${teachers[i].profession} named ${teachers[i].teacher} and he likes to work on a(n) ${teachers[i].brand}.`);
 }
