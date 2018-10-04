@@ -34,6 +34,7 @@
                 </p>
                 <?php
                     // POSTS (naming: <month-id>_<name>)
+                    get_post(2018, '10-01_major_steps');
                     get_post(2018, '09-04_plans_thoughts');
                     get_post(2018, '09-03_updates_frustrations');
                     get_post(2018, '09-02_why');

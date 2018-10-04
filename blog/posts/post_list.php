@@ -20,6 +20,10 @@
         case '09-04_plans_thoughts':
             $post_name_formatted = 'Plans and Thoughts';
             break;
+        
+        case '10-01_major_steps':
+            $post_name_formatted = 'Major Steps Forward';
+            break;
          
         default:
             $post_name_formatted = 'missingno';

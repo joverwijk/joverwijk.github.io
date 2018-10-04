@@ -234,7 +234,7 @@ function random_lap_time() {
         2.99, 3.00, 3.01, 4.01, 2.79, 2.88, 3.10, 4.12
     ];
 
-    let r = Math.floor(Math.random() * lap_rounds.length);
+    let r = Math.floor(Math.random() * lap_rounds.length); // r = random_round
 
     console.log(lap_rounds[r].toFixed(2));
 }
