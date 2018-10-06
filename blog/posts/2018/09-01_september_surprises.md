@@ -1,5 +1,7 @@
 <p class="date">26 September 2018 | <a href="<!-- PERMALINK -->" title="<!-- PERMALINKTITLE -->">permalink</a> | Category: <a href="/blog/posts/categories.php?category=yellowstone">Yellowstone</a></p>
 
+EDIT 06 October 2018: Changed GHG-15 and GHG-16 to match current consensus.
+
 ## September in Review (so far) {.blog_post_heading .anchor #september_surprises}
 
 September really started off as a month having anything but something special to
@@ -43,8 +45,8 @@ Pump Geyser became less powerful in the hours following Ear Spring's eruption,
 maybe related to UNNG-GHG-17's development?
 
 In the hours and days following Ear Spring's eruptions, there were at least three
-new developments: a geyser 16 feet north of Doublet Pool (UNNG-GHG-15), one right
-of the trail leading to Solitary Geyser (UNNG-GHG-16) and a crack below the
+new developments: a geyser 16 feet north of Doublet Pool (UNNG-GHG-16), one right
+of the trail leading to Solitary Geyser (UNNG-GHG-15) and a crack below the
 boardwalk near Pump (UNNG-GHG-17), which has now grown into a geyser. The boardwalk
 now also needs to be moved because of #17.
 
