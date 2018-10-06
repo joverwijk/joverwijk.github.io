@@ -21,7 +21,7 @@ of that plume.
 So, I kept watching. Stayed up longer than I intended, to gather some more information
 on that feature and to see what will happen next. And that's when the fun began.
 
-### And the fun begins! {.blog_post_heading}
+### Geyser Hill goes nuts {.blog_post_heading}
 
 I kept seeing reports rolling in on GeyserTimes of features I thought didn't do
 much or didn't even know of. Eventually this spread to the upper third of Geyser
