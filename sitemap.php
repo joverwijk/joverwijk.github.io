@@ -7,8 +7,7 @@
     // functie om XML te genereren
     function generate_entry($page_name) {
         $last_modified = date('c', filemtime($page_name . '.php'));
-        $url = 'http://foobar.dev/';
-        $full_url = $url . $page_name;
+        $full_url = 'https://www.jarnooverwijk.nl/' . $page_name;
 
         return "<url>\n<loc>" . $full_url . ".php</loc>\n<lastmod>" . $last_modified . "</lastmod>\n</url>\n";
     }
@@ -31,10 +30,4 @@
     $page_content = ob_get_clean();
 
     echo $page_content;
-
-    // voor GitHub
-    $github_url = str_replace('http://foobar.dev/', 'https://joverwijk.github.io/html/', $page_content);
-    $github_page_content = str_replace('.php', '.html', $github_url);
-    // sla inhoud vervolgens op in een XML-bestand
-    file_put_contents('sitemap.xml', $github_page_content);
 ?>

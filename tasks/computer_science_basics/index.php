@@ -30,9 +30,5 @@
     // sla inhoud op in $page_content en wis buffer
     $page_content = ob_get_clean();
 
-    // postprocessing
-    include($root . '/needs/postprocessing.php');
-
-    // sla inhoud na postprocessing op in HTML
-    file_put_contents($root . '/html/tasks/computer_science_basics/index.html', $github_page_content);
+    echo $page_content;
 ?>

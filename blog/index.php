@@ -33,12 +33,13 @@
                     persons.
                 </p>
                 <?php
-                    // POSTS (naming: <month-id>_<name>)
-                    get_post(2018, '10-01_major_steps');
-                    get_post(2018, '09-04_plans_thoughts');
-                    get_post(2018, '09-03_updates_frustrations');
-                    get_post(2018, '09-02_why');
-                    get_post(2018, '09-01_september_surprises');
+                    // POSTS = get_postc(year, month-id_name, category)
+                    get_postc(2018, '10-02_its_here', 'website');
+                    get_postc(2018, '10-01_major_steps', 'website');
+                    get_postc(2018, '09-04_plans_thoughts', 'website');
+                    get_postc(2018, '09-03_updates_frustrations', 'website');
+                    get_postc(2018, '09-02_why', 'general');
+                    get_postc(2018, '09-01_september_surprises', 'yellowstone');
                 ?>
                 <p class="small_right">
                     Blog created using <a href="http://parsedown.org/" title="Parsedown">Parsedown</a>.
@@ -52,15 +53,5 @@
     // save content as $page_content and empty buffer
     $page_content = ob_get_clean();
 
-    // postprocessing
-    include($root . '/needs/postprocessing.php');
-
-    // replace all PHP URLs
-    $github_page_content = str_replace('/blog/posts/individual.php?year=', '/html/blog/posts/', $github_page_content);
-    $github_page_content = str_replace('&amp;post=', '_', $github_page_content);
-    $github_page_content = str_replace('&post=', '_', $github_page_content);
-    $github_page_content = str_replace('<!-- HTMLEXT -->', '.html', $github_page_content);
-
-    // save content as HTML for GitHub
-    file_put_contents($root . '/html/blog/index.html', $github_page_content);
+    echo $page_content;
 ?>

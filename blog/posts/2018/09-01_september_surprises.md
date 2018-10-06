@@ -1,4 +1,4 @@
-<p class="date">26 September 2018 | <a href="<!-- PERMALINK -->" title="<!-- PERMALINKTITLE -->">permalink</a></p>
+<p class="date">26 September 2018 | <a href="<!-- PERMALINK -->" title="<!-- PERMALINKTITLE -->">permalink</a> | Category: <a href="/blog/posts/categories.php?category=yellowstone">Yellowstone</a></p>
 
 ## September in Review (so far) {.blog_post_heading .anchor #september_surprises}
 

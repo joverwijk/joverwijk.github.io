@@ -21,7 +21,7 @@
                 </p>
                 <p>
                     Voordat je verder gaat lezen, ik ben Jarno Overwijk. Lees wat
-                    meer over mij op <a href="profile.<!-- FILEEXT -->" title="Profiel">deze
+                    meer over mij op <a href="profile.php" title="Profiel">deze
                     pagina</a>.
                 </p>
                 <article class="flex flex_home">
@@ -85,9 +85,5 @@
     // sla inhoud op in $page_content en wis buffer
     $page_content = ob_get_clean();
 
-    // postprocessing
-    include('needs/postprocessing.php');
-
-    // sla inhoud na postprocessing op in HTML
-    file_put_contents('html/index.html', $github_page_content);
+    echo $page_content;
 ?>

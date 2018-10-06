@@ -24,6 +24,10 @@
         case '10-01_major_steps':
             $post_name_formatted = 'Major Steps Forward';
             break;
+        
+        case '10-02_its_here':
+            $post_name_formatted = "It's Here!";
+            break;
          
         default:
             $post_name_formatted = 'missingno';

@@ -1,4 +1,4 @@
-<p class="date">04 October 2018 | <a href="<!-- PERMALINK -->" title="<!-- PERMALINKTITLE -->">permalink</a></p>
+<p class="date">04 October 2018 | <a href="<!-- PERMALINK -->" title="<!-- PERMALINKTITLE -->">permalink</a> | Category: <a href="/blog/posts/categories.php?category=website">Website</a></p>
 
 ## Major Steps Forward {.blog_post_heading .anchor #major_steps}
 

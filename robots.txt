@@ -1,0 +1,10 @@
+User-agent: *
+
+Disallow: /img/
+Disallow: /sources/
+Disallow: /needs/
+Disallow: /blog/sources/
+
+Sitemap: https://www.joverwijk.nl/sitemap.php
+
+Crawl-delay: 30

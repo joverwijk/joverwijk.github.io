@@ -7,26 +7,15 @@
     // get root and parameters from URL
     $root = $_SERVER["DOCUMENT_ROOT"];
 
-    if ($_GET["year"] == !null) {
-        $post_year = $_GET["year"];
-    } else {
-        $post_year = 0;
-    }
-
-    if ($_GET["post"] == !null) {
-        $post_name = $_GET["post"];
-    } else {
-        $post_name = 'index';
-    }
+    $category = $_GET["category"];
 
     include($root . '/blog/sources/frame.php');
-    include($root . '/blog/posts/post_list.php'); // returns 'post_name_formatted'
 ?>
 <!DOCTYPE html>
 <html>
     <head>
         <?php
-            $page_title = 'Post: ' . $post_name_formatted; // From post_list.php
+            $page_title = 'Category: ' . ucfirst($category);
             include($root . '/needs/header.php');
         ?>
     </head>
@@ -38,7 +27,22 @@
         <main>
             <section>
                 <?php
-                    get_post($post_year, $post_name);
+                    echo '<h1> Category: ' . ucfirst($category) . '</h1>';
+
+                    include($root . '/blog/sources/db_conn.php');
+
+                    $query = "SELECT * FROM posts WHERE category='$category' ORDER BY id DESC";
+                    $query_result = $connect->query($query);
+
+                    if ($query_result->num_rows > 0) {
+                        // show all posts beloning to that category
+                        while ($post = $query_result->fetch_assoc()) {
+                            
+                            // split id up in year and title
+                            list($post_year, $post_title) = explode("/", $post["id"]);
+                            get_post($post_year, $post_title);
+                        }
+                    }
                 ?>
                 <p class="small_right">
                     Blog created using <a href="http://parsedown.org/" title="Parsedown">Parsedown</a>.

@@ -46,7 +46,7 @@
             ],
             datasets: [{
                 label: "EC",
-                data: [0], // iedere waarde representeert een maand zoals beschreven bij 'labels' hierboven
+                data: [0,0], // iedere waarde representeert een maand zoals beschreven bij 'labels' hierboven
                 fill: false,
                 lineTension: 0,
                 spanGaps: true,
