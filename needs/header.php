@@ -18,3 +18,4 @@
 <link rel="stylesheet" type="text/css" media="screen" href="/css/responsive.css"/>
 
 <script src="/js/responsive.js"></script>
+<script src="/js/main.js"></script>

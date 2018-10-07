@@ -21,6 +21,7 @@
 
     include($root . '/blog/sources/frame.php');
     include($root . '/blog/posts/post_list.php'); // returns 'post_name_formatted'
+    include($root . '/blog/sources/db_conn.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -38,6 +39,8 @@
         <main>
             <section>
                 <?php
+                    include($root . '/blog/sources/post_nav.php');
+
                     get_post($post_year, $post_name);
                 ?>
                 <p class="small_right">

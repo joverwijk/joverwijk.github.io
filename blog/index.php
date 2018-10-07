@@ -4,6 +4,7 @@
     $root = $_SERVER["DOCUMENT_ROOT"];
 
     include($root . '/blog/sources/frame.php');
+    include($root . '/blog/sources/db_conn.php');
 ?>
 <!DOCTYPE html>
     <html>
@@ -33,13 +34,23 @@
                     persons.
                 </p>
                 <?php
-                    // POSTS = get_postc(year, month-id_name, category)
-                    get_postc(2018, '10-02_its_here', 'website');
-                    get_postc(2018, '10-01_major_steps', 'website');
-                    get_postc(2018, '09-04_plans_thoughts', 'website');
-                    get_postc(2018, '09-03_updates_frustrations', 'website');
-                    get_postc(2018, '09-02_why', 'general');
-                    get_postc(2018, '09-01_september_surprises', 'yellowstone');
+                    include($root . '/blog/sources/db_conn.php');
+                    include($root . '/blog/sources/post_nav.php');
+
+                    // "Post feed"
+                    // query: selects column id from posts table, orders descending and limits result to 10
+                    $query = "SELECT id FROM posts ORDER BY id DESC LIMIT 10";
+                    $query_result = $connect->query($query);
+
+                    if ($query_result->num_rows > 0) {
+                        // show posts gotten
+                        while ($post = $query_result->fetch_assoc()) {
+                            
+                            // split id up in year and title
+                            list($post_year, $post_title) = explode("/", $post["id"]);
+                            get_post($post_year, $post_title);
+                        }
+                    }
                 ?>
                 <p class="small_right">
                     Blog created using <a href="http://parsedown.org/" title="Parsedown">Parsedown</a>.

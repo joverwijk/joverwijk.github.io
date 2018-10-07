@@ -28,6 +28,10 @@
         case '10-02_its_here':
             $post_name_formatted = "It's Here!";
             break;
+
+        case '10-03_more_stuff':
+            $post_name_formatted = "More Stuff";
+            break;
          
         default:
             $post_name_formatted = 'missingno';
