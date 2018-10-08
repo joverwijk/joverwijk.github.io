@@ -7,8 +7,8 @@
     // get root and parameters from URL
     $root = $_SERVER["DOCUMENT_ROOT"];
 
-    (string)$year = $_GET["year"];
-    (string)$month = $_GET["month"];
+    $year = $_GET["year"];
+    $month = $_GET["month"];
 
     include($root . '/blog/sources/frame.php');
     include($root . '/blog/sources/month_switch2.php');
@@ -19,8 +19,13 @@
         <?php
             if ($month == null) {
                 $page_title = 'Posts by Date (' . $year . ')';
+                $query_ym = $year . "/";
             } else {
                 $page_title = 'Posts by Date (' . $month_translated . ' ' . $year . ')';
+                if ($month <= 9) {
+                    $month = "0" . $month;
+                }
+                $query_ym = $year . "/" . $month;
             }
             include($root . '/needs/header.php');
         ?>
@@ -37,13 +42,7 @@
                     include($root . '/blog/sources/db_conn.php');
                     include($root . '/blog/sources/post_nav.php');
 
-                    if ($month == null) {
-                        $param = "`year`=$year";
-                    } else {
-                        $param = "`year`=$year,`month`=$month";
-                    }
-
-                    $query = "SELECT `id`,`year`,`month` FROM posts WHERE " . $param . "ORDER BY `id` DESC";
+                    $query = "SELECT id FROM posts WHERE id LIKE '$query_ym%' ORDER BY id DESC";
                     
                     $query_result = $connect->query($query);
 

@@ -47,7 +47,11 @@
                     <li>bakmeel</li>
                     <li>wortels</li>
                 </ul>
-                <p id="dummy"></p>
+                <p>
+                    Proberen zelf de boodschappentabel te maken? Vereisten: 1) eenmaal <code>createElement</code>,
+                    2) eenmaal <code>appendChild</code> en 3) 19 of minder coderegels voor de functie, exclusief witregels.</br>
+                    <small>EN NIET SPIEKEN!</small>
+                </p>
                 <script src="/tasks/programming_basics/js/dom.js"></script>
                 <?php include($root . '/needs/footer.php'); ?>
             </section>

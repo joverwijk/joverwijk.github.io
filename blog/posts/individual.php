@@ -10,24 +10,31 @@
     if ($_GET["year"] == !null) {
         $post_year = $_GET["year"];
     } else {
-        $post_year = 0;
+        $post_year = 2018;
     }
 
     if ($_GET["post"] == !null) {
         $post_name = $_GET["post"];
     } else {
-        $post_name = 'index';
+        $post_name = '09-01_september_surprises';
     }
 
     include($root . '/blog/sources/frame.php');
-    include($root . '/blog/posts/post_list.php'); // returns 'post_name_formatted'
     include($root . '/blog/sources/db_conn.php');
 ?>
 <!DOCTYPE html>
 <html>
     <head>
         <?php
-            $page_title = 'Post: ' . $post_name_formatted; // From post_list.php
+            $post_id = $post_year . "/" . $post_name;
+
+            $query = "SELECT id,title FROM posts WHERE id='$post_id'";
+
+            $query_result = $connect->query($query);
+
+            $query_result = $query_result->fetch_assoc();
+
+            $page_title = 'Post: ' . $query_result["title"];
             include($root . '/needs/header.php');
         ?>
     </head>

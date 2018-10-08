@@ -1,4 +1,4 @@
-<p class="date">29 September 2018 | <a href="<!-- PERMALINK -->" title="<!-- PERMALINKTITLE -->">permalink</a> | Category: <a href="/blog/posts/categories.php?category=website">Website</a></p>
+<p class="date">29 September 2018 | <a href="<!-- PERMALINK -->" title="<!-- PERMALINKTITLE -->">permalink</a> | Category: <a href="<!-- CATEGORYLINK -->" title="<!-- CATEGORYTITLE -->">Website</a></p>
 
 ## Updates and FRUSTRATIONS {.blog_post_heading .anchor #updates_frustrations}
 

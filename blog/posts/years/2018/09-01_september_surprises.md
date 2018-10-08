@@ -1,4 +1,4 @@
-<p class="date">26 September 2018 | <a href="<!-- PERMALINK -->" title="<!-- PERMALINKTITLE -->">permalink</a> | Category: <a href="/blog/posts/categories.php?category=yellowstone">Yellowstone</a></p>
+<p class="date">26 September 2018 | <a href="<!-- PERMALINK -->" title="<!-- PERMALINKTITLE -->">permalink</a> | Category: <a href="<!-- CATEGORYLINK -->" title="<!-- CATEGORYTITLE -->">Yellowstone</a></p>
 
 EDIT 06 October 2018: Changed GHG-15 and GHG-16 to match current consensus.
 
