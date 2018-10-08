@@ -11,8 +11,7 @@
         ?>
         <script src="/tasks/programming_basics/js/main.js"></script>
         <!-- <script src="/tasks/programming_basics/js/functions.js"></script>
-        <script src="/tasks/programming_basics/js/arrays.js"></script>
-        <script src="/tasks/programming_basics/js/objects.js"></script> -->
+        <script src="/tasks/programming_basics/js/arrays.js"></script> -->
     </head>
     <body>
         <?php
@@ -35,11 +34,21 @@
             <a href="javascript:void(0);" class="nav_icon" onclick="show_nav_dropdown()"><i class="fa fa-bars"></i></a>
         </nav>
         <main>
-            <section>
+            <section id="section">
                 <h1>Programming Basics</h1>
                 <p>
                     SOON...^tm
                 </p>
+                <h2>DOM Scripting</h2>
+                <b>Boodschappenlijstje</b>
+                <ul id="errand_list">
+                    <li>tandenborstel</li>
+                    <li>deodorant</li>
+                    <li>bakmeel</li>
+                    <li>wortels</li>
+                </ul>
+                <p id="dummy"></p>
+                <script src="/tasks/programming_basics/js/dom.js"></script>
                 <?php include($root . '/needs/footer.php'); ?>
             </section>
         </main>
