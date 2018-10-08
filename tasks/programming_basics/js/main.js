@@ -305,33 +305,25 @@ const teachers = [
         profession: "teacher",
         brand: "Linux",
         hours_per_week: 32,
-        salary: 14,
-        salary_per_hour: function() {
-            console.log(`${teachers[0].teacher} earns €${teachers[0].salary} per hour. He works ${teachers[0].hours_per_week} hours a week.`);
-        }
+        salary: 14
     },
     {
         teacher: "Daan",
         profession: "teacher",
         brand: "Arduino",
         hours_per_week: 32,
-        salary: 16,
-        salary_per_hour: function() {
-            console.log(`${teachers[1].teacher} earns €${teachers[1].salary} per hour. He works ${teachers[1].hours_per_week} hours a week.`);
-        }
+        salary: 16
     },
     {
         teacher: "Rimmert",
         profession: "teacher",
         brand: "Apple",
         hours_per_week: 24,
-        salary: 15,
-        salary_per_hour: function() {
-            console.log(`${teachers[2].teacher} earns €${teachers[2].salary} per hour. He works ${teachers[2].hours_per_week} hours a week.`);
-        }
+        salary: 15
     }
 ];
 
 for (let i = 0; i < teachers.length; i++) {
     console.log(`I have a ${teachers[i].profession} named ${teachers[i].teacher} and he likes to work on a(n) ${teachers[i].brand}.`);
+    console.log(`${teachers[i].teacher} earns €${teachers[i].salary} per hour. He works ${teachers[i].hours_per_week} hours a week.`);
 }

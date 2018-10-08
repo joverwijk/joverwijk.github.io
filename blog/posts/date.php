@@ -49,7 +49,7 @@
 
                     if ($query_result->num_rows > 0) {
                         // show all posts beloning to that category
-                        while ($post = mysqli_fetch_assoc($query_result)) {
+                        while ($post = $query_result->fetch_assoc()) {
                             // split id up in year and title and place post
                             list($post_year, $post_title) = explode("/", $post["id"]);
                             get_post($post_year, $post_title);
