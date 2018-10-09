@@ -1,3 +1,11 @@
+/* ALGEMEEN */
+
+function random_int(min, max) {
+    min = Math.ceil(min);
+    max = Math.ceil(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 /* TYPES & VARIABLES */
 
 // geef 'even' of 'oneven' op basis van laatste karakter
@@ -326,4 +334,51 @@ const teachers = [
 for (let i = 0; i < teachers.length; i++) {
     console.log(`I have a ${teachers[i].profession} named ${teachers[i].teacher} and he likes to work on a(n) ${teachers[i].brand}.`);
     console.log(`${teachers[i].teacher} earns €${teachers[i].salary} per hour. He works ${teachers[i].hours_per_week} hours a week.`);
+}
+
+/* DOM SCRIPTING */
+// opdracht 1
+function calc_average() {
+    let total = 0;
+    for (let i = 0; i < 4; i++) {
+        // selecteer laatste element van tabelrij
+        let course = document.getElementById("course" + (Number(i) + 1)).lastElementChild.innerHTML;
+        total = Number(total) + Number(course);
+    }
+    let average = Number(total) / 4;
+    course_table = document.getElementById("course_table");
+    let average_row = course_table.insertRow();
+    let average_cell = average_row.insertCell(0);
+    average_cell.innerHTML = "<b>GEMIDDELDE</b>: " + Math.round(average * 10) / 10;
+}
+
+// opdracht 2
+function highlight_even_courses() {
+    // selecteer de klassen met regex
+    let courses = document.querySelectorAll('[class^="course"]');
+    for (let i = 0; i < courses.length; i++) {
+        let j = Number(i) + 1;
+        if (j % 2 == 0 && j <= 7) {
+            courses[j].style.backgroundColor = "#DDD";
+        }
+    }
+}
+
+// opdracht 3
+function create_image_element() {
+    let previous_image = document.getElementById("dom_image");
+    // kies willekeurig getal door middel van random_int()
+    let rnum_image = random_int(0, 992);
+    const image_url = "https://picsum.photos/400/?image=" + rnum_image;
+
+    const append_element = document.getElementById("image_to_be_generated");
+
+    if (previous_image == null) {
+        let new_element = document.createElement("img");
+        new_element.id = "dom_image";
+        new_element.src = image_url;
+        append_element.appendChild(new_element);
+    } else {
+        previous_image.src = image_url;
+    }
 }
