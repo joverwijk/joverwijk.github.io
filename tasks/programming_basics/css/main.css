@@ -1,7 +1,70 @@
-@import url('https://fonts.googleapis.com/css?family=|Source+Sans+Pro');
+/* Clicker 5 000 000 CSS */
 
-body {
+/* Startknop */
+/* Animatie (credits: Milan Nohejl on CodePen - https://codepen.io/nohoid/pen/kIfto) */
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+button.click_game_start {
+    background-color: #297B45;
+    color: #FFF;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 auto !important;
+    display: block;
+    font-size: 1em;
+    border: none;
+}
+
+button.click_game_start:hover,
+button.click_game_start:active {
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3, #ff2400, #e81d1d, #e8b71d, #e3e81d);
+    background-size: 1800% 1800%;
+    -webkit-animation: rainbow 0.5s ease infinite;
+    -z-animation: rainbow 0.5s ease infinite;
+    -o-animation: rainbow 0.5s ease infinite;
+    animation: rainbow 0.5s ease infinite;
+}
+
+#click_game {
+    width: 100% !important;
+    position: relative;
+
+}
+
+/* De klikknop */
+button.click_game_button {
+    background-color: #297B45;
+    color: #FFF;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 auto !important;
+    display: block;
+    font-size: 1em;
+    border: none;
+}
+
+button.click_game_button:hover,
+button.click_game_button:active {
     background-color: #164225;
-    font-family: 'Source Sans Pro', sans-serif;
-    color: white;
 }

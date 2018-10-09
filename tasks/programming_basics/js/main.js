@@ -336,7 +336,7 @@ for (let i = 0; i < teachers.length; i++) {
     console.log(`${teachers[i].teacher} earns €${teachers[i].salary} per hour. He works ${teachers[i].hours_per_week} hours a week.`);
 }
 
-/* DOM SCRIPTING */
+/* DOM SCRIPTING I: Algemeen */
 // opdracht 1
 function calc_average() {
     let total = 0;
@@ -381,4 +381,77 @@ function create_image_element() {
     } else {
         previous_image.src = image_url;
     }
+}
+
+/* DOM SCRIPTING II: Event Handling */
+// Opdracht 1
+
+// ZIE /tasks/programming_basics/js/games/clicker.js
+
+
+// Opdracht 2
+// set-up
+// Check if page has loaded. If not, wait
+window.addEventListener('load', init_errand);
+
+function init_errand() {
+    let errand_add = document.getElementById("errand_add");
+
+    errand_add.addEventListener('click', errand_adder);
+}
+
+// voeg tabelrij toe
+function errand_adder(event) {
+    event.preventDefault();
+    // verzamel ID's
+    let errand_table_parent = document.getElementById("errand_list");
+    let errand_item = document.getElementById("errand_item").value;
+    let errand_price = document.getElementById("errand_price").value;
+    let errand_table = document.createElement("table");
+
+    let errand_total_price = document.getElementById("errand_total_price").innerHTML;
+
+    // controleer of prijs ook echt een prijs is
+    // vervang komma's
+    errand_price_formatted = errand_price.replace(',', '.');
+    //const regex = /^(\d*([.,](?=\d{3}))?\d+)+((?!\2)[.,]\d\d)?$/; // Thanks, StackOverflow
+    
+    // vervang komma's in de totale prijs
+    errand_total_price = errand_total_price.innerHTML.replace(',', '.');
+    // tel prijzen bij elkaar op en rond af op twee decimalen
+    errand_total_price = Number(errand_total_price) + Number(errand_price_formatted);
+    errand_total_price = Math.round(errand_total_price * 100) / 100;
+    // vervang punten in de totale prijs
+    errand_total_price.innerHTML = errand_total_price.replace('.', ',');
+    
+
+    // soort van teller voor de tabelrijen
+    let i = 0;
+    let row = errand_table.insertRow(i);
+    row.id = "errand" + i;
+    i++;
+
+    // voeg cellen  toe
+    let errand_item_cell = row.insertCell(0);
+    let errand_price_cell = row.insertCell(1);
+    let errand_delete_cell = row.insertCell(2);
+
+    // zet waarden in de cellen
+    errand_item_cell.innerHTML = errand_item;
+    errand_price_cell.innerHTML = errand_price;
+
+    // maak de verwijderknop
+    let errand_delete_button = document.createElement("button");
+    errand_delete_button.innerHTML = "verwijderen";
+    errand_delete_button.addEventListener('click', remove_errand, false);
+
+    // voeg verwijderknop toe
+    errand_delete_cell.innerHTML = errand_delete_button;
+
+    errand_table_parent.appendChild(errand_table);
+}
+
+// verwijder boodschappen
+function remove_errand() {
+    this.parentNode.parentNode.remove();
 }

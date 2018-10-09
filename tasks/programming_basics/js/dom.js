@@ -74,6 +74,4 @@ function init() { // START INIT
         }
     }
 
-
-
 } // END INIT
