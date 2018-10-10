@@ -23,7 +23,7 @@
     <body>
         <!-- Manual nav will do for now -->
         <nav class="nav_js" id="responsive_nav">
-            <a href="/blog/index.php"><i class="fa fa-caret-left"></i>&nbsp;Blog</a>
+            <a href="/blog/"><i class="fa fa-caret-left"></i>&nbsp;Blog</a>
         </nav>
         <main>
             <section>

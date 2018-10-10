@@ -57,7 +57,7 @@
     $nav_link_motivation = "<a" . $active_motivation . " href='/motivation.php'>Motivatie</a>\n";
     $nav_link_job_image = "<a" . $active_job_image . " href='/job_image.php'>Beroepsbeeld</a>\n";
     $nav_link_tasks = "<div class='dropdown'>\n<a" . $active_tasks . " href='/tasks/index.php'>Opdrachten&nbsp;<i class='fa fa-caret-down'></i></a>\n" . $tasks_dropdown . "\n</div>\n";
-    $nav_link_blog = "<a" . $active_blog . " href='/blog/index.php'>Blog</a>\n";
+    $nav_link_blog = "<a" . $active_blog . " href='/blog/'>Blog</a>\n";
 
     // responsief
     $nav_responsive = '<a href="javascript:void(0);" class="nav_icon" onclick="show_nav_dropdown()"><i class="fa fa-bars"></i></a>';
