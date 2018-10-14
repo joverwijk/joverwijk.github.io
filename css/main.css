@@ -308,6 +308,25 @@ ul.horizontal_list > li > ul {
     font-weight: bold;
 }
 
+/* Afbeeldingen */
+figure {
+    margin: 0;
+    padding: 5px;
+    max-width: 25%;
+    display: flex;
+    flex-flow: column;
+}
+
+figure > img {
+    max-width: 100%;
+}
+
+figcaption {
+    font-size: smaller;
+    text-align: center;
+    padding: 2px;
+}
+
 /*****************************************************************************/
 /* Citaties                                                                  */
 /*****************************************************************************/
