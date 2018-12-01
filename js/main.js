@@ -40,3 +40,5 @@ function month_opener(year_l, year_a) {
         year_arrow.classList = "fa fa-caret-right";
     }
 }
+
+// https://imgs.xkcd.com/comics/the_history_of_unicode_2x.png

@@ -392,66 +392,68 @@ function create_image_element() {
 // Opdracht 2
 // set-up
 // Check if page has loaded. If not, wait
-window.addEventListener('load', init_errand);
+window.addEventListener('load', errands);
 
-function init_errand() {
+let errand_list = [];
+let errand_object = {};
+
+function errands() {
     let errand_add = document.getElementById("errand_add");
 
-    errand_add.addEventListener('click', errand_adder);
-}
+    errand_add.addEventListener('click', function(event) {
+        // voorkom POST-gedrag
+        event.preventDefault();
 
-// voeg tabelrij toe
-function errand_adder(event) {
-    event.preventDefault();
-    // verzamel ID's
-    let errand_table_parent = document.getElementById("errand_list");
-    let errand_item = document.getElementById("errand_item").value;
-    let errand_price = document.getElementById("errand_price").value;
-    let errand_table = document.createElement("table");
+        // maak object om vervolgens uit te lezen
+        let errand_item = document.getElementById("errand_item").value;
+        let errand_price = document.getElementById("errand_price").value;
 
-    let errand_total_price = document.getElementById("errand_total_price").innerHTML;
+        errand_object["errand_item"] = errand_item;
+        errand_object["errand_price"] = errand_price;
 
-    // controleer of prijs ook echt een prijs is
-    // vervang komma's
-    errand_price_formatted = errand_price.replace(',', '.');
-    //const regex = /^(\d*([.,](?=\d{3}))?\d+)+((?!\2)[.,]\d\d)?$/; // Thanks, StackOverflow
-    
-    // vervang komma's in de totale prijs
-    errand_total_price = errand_total_price.innerHTML.replace(',', '.');
-    // tel prijzen bij elkaar op en rond af op twee decimalen
-    errand_total_price = Number(errand_total_price) + Number(errand_price_formatted);
-    errand_total_price = Math.round(errand_total_price * 100) / 100;
-    // vervang punten in de totale prijs
-    errand_total_price.innerHTML = errand_total_price.replace('.', ',');
-    
+        errand_list.push(errand_object);
 
-    // soort van teller voor de tabelrijen
-    let i = 0;
-    let row = errand_table.insertRow(i);
-    row.id = "errand" + i;
-    i++;
+        console.log(errand_list);
 
-    // voeg cellen  toe
-    let errand_item_cell = row.insertCell(0);
-    let errand_price_cell = row.insertCell(1);
-    let errand_delete_cell = row.insertCell(2);
+        // krijg de tabel
+        let table = document.getElementById("errand_table");
 
-    // zet waarden in de cellen
-    errand_item_cell.innerHTML = errand_item;
-    errand_price_cell.innerHTML = errand_price;
+        // voeg rij toe
+        let row = table.insertRow();
+        
+        // voeg cellen toe
+        let cell1 = row.insertCell(0);
+        let cell2 = row.insertCell(1);
+        let cell3 = row.insertCell(2);
 
-    // maak de verwijderknop
-    let errand_delete_button = document.createElement("button");
-    errand_delete_button.innerHTML = "verwijderen";
-    errand_delete_button.addEventListener('click', remove_errand, false);
+        // verwijderknop
+        let errand_delete = document.createElement("button");
+        errand_delete.innerHTML = "verwijderen"
+        errand_delete.onclick = delete_row(event);
 
-    // voeg verwijderknop toe
-    errand_delete_cell.innerHTML = errand_delete_button;
+        // totale prijs
+        let errand_total_price = document.getElementById("errand_total_price");
+        let total_price = 0
 
-    errand_table_parent.appendChild(errand_table);
-}
+        // for-loop voor voorwerpen
+        for (let i = 0; i < errand_list.length; i++) {
+            cell1.innerHTML = errand_list[i].errand_item;
+            cell2.innerHTML = errand_list[i].errand_price;
+            cell3.innerHTML = errand_delete;
 
-// verwijder boodschappen
-function remove_errand() {
-    this.parentNode.parentNode.remove();
+            total_price = Number(total_price) + Number(errand_list[i].errand_price);
+            total_price = Math.round(total_price * 100) / 100;
+            errand_total_price.innerHTML = total_price;
+        }
+    });
+
+    // functie om de verwijderknop te laten werken
+    function delete_row(event) {
+        let errand_row = event.target.parentNode.parentNode;
+        let table = document.getElementById("errand_table");
+
+        if (errand_row == !null) {
+            table.removeChild(errand_row);
+        }
+    }
 }

@@ -125,17 +125,24 @@
                 </p>
 
                 <p>
-                    Handig, zo'n boodschappenlijstjesmaker.
+                    Handig, zo'n boodschappenlijstjesmaker, maar dan moet-ie wel werken...
                 </p>
-                <form id="errand_list_creator">
+                <form id="errand_list_creator" action="">
                     <input type="text" placeholder="Boodschap" id="errand_item">
-                    <input type="text" placeholder="Prijs" id="errand_price">
+                    <input type="number" placeholder="Prijs" id="errand_price">
                     <input type="submit" value="Toevoegen" id="errand_add">
                 </form>
                 <div id="errand_list">
                     <p>
-                        <b>TOTAAL:</b> <label id="errand_total_price">0,00</label>
+                        <b>TOTAAL:</b> <label id="errand_total_price">0.00</label>
                     </p>
+                    <table id="errand_table">
+                        <tr id="errand_row_undeletable">
+                            <th>Boodschap</th>
+                            <th>Prijs</th>
+                            <th></th>
+                        </tr>
+                    </table>
                 </div>
 
                 <?php include($root . '/needs/footer.php'); ?>
