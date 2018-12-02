@@ -13,11 +13,11 @@
     }
     echo '</ul>';
 
-    // Year and month
+    // Year and month (update this one to display years, months and such)
     $array_date = array(
         array( // 0
             "year" => 2018,
-            "months" => array(9,10)
+            "months" => array(9,10,12)
         ),
     );
 
