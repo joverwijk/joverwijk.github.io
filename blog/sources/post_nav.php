@@ -1,7 +1,7 @@
 <?php
     // Categories
     function category_list_item($item) {
-        echo '<li><a href="/blog/posts/category/' . $item . '/">' . ucfirst($item) . '</a></li>';
+        echo '<li><a href="/blog/posts/category/' . $item . '/">' . ucwords(preg_replace("/_+/", " ", $item)) . '</a></li>';
     }
 
     $query_categories = "SELECT DISTINCT category FROM posts ORDER BY category ASC";

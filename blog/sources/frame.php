@@ -33,9 +33,9 @@
         $post = $parsedown->text($content);
 
         // find categories
-        preg_match('/<!-- CATEGORYTITLE -->\">(?P<category>[a-zA-Z]+)/', $post, $category);
+        preg_match('/<!-- CATEGORYTITLE -->\">(?P<category>[a-zA-Z\- ]+)/', $post, $category);
 
-        $cat = $category["category"];
+        $cat = preg_replace("/ +/", "_", $category["category"]);
 
         // replace certain 'keywords' with their intended content
         $post = str_replace('<!-- PERMALINKTITLE -->', 'Copy link from URL bar in browser', $post);

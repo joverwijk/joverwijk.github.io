@@ -16,7 +16,7 @@
 <html>
     <head>
         <?php
-            $page_title = 'Category: ' . ucfirst($category);
+            $page_title = 'Category: ' . ucwords(preg_replace("/_+/", " ", $category));
             include($root . '/needs/header.php');
         ?>
     </head>
@@ -28,7 +28,7 @@
         <main>
             <section>
                 <?php
-                    echo '<h1> Category: ' . ucfirst($category) . '</h1>';
+                    echo '<h1> Category: ' . ucwords(preg_replace("/_+/", " ", $category)) . '</h1>';
                     include($root . '/blog/sources/post_nav.php');
 
                     $query = "SELECT * FROM posts WHERE category='$category' ORDER BY id DESC";
